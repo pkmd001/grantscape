@@ -1,5 +1,8 @@
 # GrantScape
 
+[![DOI](https://zenodo.org/badge/1378469749.svg)](https://doi.org/10.5281/zenodo.22863130)
+
+
 **The NIH funding landscape for grant strategy.** A single-page, dependency-free
 web app that turns public NIH data into an applicant-facing view of *what NIH
 funds*, *where the money is moving*, and *where a given line of science is
@@ -94,7 +97,7 @@ determine, submission strategy. **Not affiliated with or endorsed by NIH.** All
 data are U.S. government public-domain works.
 
 ## Citing
-See `CITATION.cff` (a "Cite this repository" button appears on GitHub).
+Archived release: **https://doi.org/10.5281/zenodo.22863130** (concept DOI, all versions). See `CITATION.cff` (a "Cite this repository" button appears on GitHub).
 
 ## License
 MIT — see [LICENSE](LICENSE).
