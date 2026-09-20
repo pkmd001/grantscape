@@ -78,6 +78,10 @@
         <div><label>Momentum</label><br><select id="metric">
           <option value="rel">Relative to portfolio</option>
           <option value="cagr">Absolute $ growth</option></select></div>
+        <div><label>Min funding</label><br><select id="minfund">
+          <option value="0">All</option><option value="10">&ge;$10M</option>
+          <option value="50" selected>&ge;$50M</option><option value="100">&ge;$100M</option>
+          <option value="500">&ge;$500M</option></select></div>
         <div style="flex:1 1 200px"><label>Search</label><br><input id="q" type="search" placeholder="e.g. stem cell, immunotherapy"></div>
       </div>
       <div class="kpis" id="mapKpis"></div>
@@ -97,6 +101,7 @@
   <div class="panel" id="concept">
     <p class="hint">For a research concept (abstract keywords), which <b>institutes</b> and <b>study sections</b> fund it &mdash; from <code>pull_concept_landscape.py</code> output. RePORTER contains funded projects only, so these are &ldquo;where funded work lands,&rdquo; not success rates.</p>
     <div class="card"><div class="row">
+      <div><label>Bundled concept</label><br><select id="conceptSel"><option value="transplant">Transplantation</option><option value="regenmed">Regenerative medicine</option></select></div>
       <div><label>Institutes CSV (…_by_ic.csv)</label><br><input id="cicFile" type="file" accept=".csv"></div>
       <div><label>Study sections CSV (…_by_studysection.csv)</label><br><input id="cssFile" type="file" accept=".csv"></div>
     </div><p class="note" id="conceptNote"></p></div>
@@ -165,7 +170,7 @@ function setupMap(){
   const y0=document.getElementById("y0"),y1=document.getElementById("y1");y0.innerHTML=y1.innerHTML="";
   RCDC.years.forEach(y=>{y0.add(new Option(y,y));y1.add(new Option(y,y));});
   y0.value=RCDC.years[Math.max(0,RCDC.years.length-6)];y1.value=RCDC.years[RCDC.years.length-1];
-  ["y0","y1","metric","q"].forEach(id=>document.getElementById(id).oninput=renderMap);
+  ["y0","y1","metric","q","minfund"].forEach(id=>document.getElementById(id).oninput=renderMap);
   document.querySelectorAll("#mapTbl th.s").forEach(th=>th.onclick=()=>{const k=th.dataset.k;if(sortK===k)sortDir*=-1;else{sortK=k;sortDir=k==="name"?1:-1;}renderMap();});
   renderMap();
 }
@@ -179,9 +184,11 @@ function computeMap(){
 }
 function renderMap(){
   const {rows,med,lo,hi}=computeMap(),q=document.getElementById("q").value.trim().toLowerCase();
-  let view=rows.filter(r=>!q||r.name.toLowerCase().includes(q));
+  const minf=+(document.getElementById("minfund").value||0);
+  const elig=rows.filter(r=>(r.latest||0)>=minf);
+  let view=elig.filter(r=>!q||r.name.toLowerCase().includes(q));
   view.sort((a,b)=>{let av=a[sortK],bv=b[sortK];if(sortK==="name")return sortDir*av.localeCompare(bv);if(isNaN(av))av=-1e9;if(isNaN(bv))bv=-1e9;return sortDir*(av-bv);});
-  const byRel=[...rows].filter(r=>!isNaN(r.rel)).sort((a,b)=>b.rel-a.rel),byL=[...rows].sort((a,b)=>b.latest-a.latest);
+  const byRel=[...elig].filter(r=>!isNaN(r.rel)).sort((a,b)=>b.rel-a.rel),byL=[...elig].sort((a,b)=>b.latest-a.latest);
   document.getElementById("mapKpis").innerHTML=
     kpi(byL[0]?byL[0].name:"—","Largest category, FY"+hi)+kpi("$"+(byL[0]?byL[0].latest.toFixed(0):"0")+"M","Its funding")+
     kpi(byRel.slice(0,3).map(r=>r.name).join(", ")||"—","Fastest-rising vs portfolio")+
@@ -190,7 +197,7 @@ function renderMap(){
   view.forEach(r=>{const tr=document.createElement("tr");if(r.name===selName)tr.className="sel";
     tr.innerHTML="<td>"+esc(r.name)+"</td><td>"+(r.latest?r.latest.toFixed(0):"—")+"</td><td>"+(r.share?r.share.toFixed(2):"—")+"</td><td>"+pc(r.cagr)+"</td><td class='"+(r.rel>0?'rise':r.rel<0?'fall':'')+"'>"+pp(r.rel)+"</td>";
     tr.onclick=()=>{selName=r.name;drawChart(r._c);renderMap();};tb.appendChild(tr);});
-  document.getElementById("mapNote").textContent="Window FY"+lo+"–"+hi+". Median category growth "+med.toFixed(1)+"%/yr (portfolio baseline). "+view.length+" categories.";
+  document.getElementById("mapNote").textContent="Window FY"+lo+"–"+hi+". Median category growth "+med.toFixed(1)+"%/yr (portfolio baseline). "+view.length+" categories shown"+(minf?(" (\u2265$"+minf+"M)"):"")+".";
   if(selName){const c=RCDC.cats.find(x=>x.name===selName);if(c)drawChart(c);}
 }
 const kpi=(b,s)=>"<div class='kpi'><b>"+esc(b)+"</b><span>"+esc(s)+"</span></div>";
@@ -294,6 +301,18 @@ document.getElementById("demoBtn").addEventListener("click",()=>{
     {institute:"NIDDK",activity_code:"R01",fiscal_year:"2022",success_rate:"17.1"}];
   detectOdds();renderOdds();
   document.getElementById("demoNote").innerHTML="<span class='badge'>SYNTHETIC</span> Illustrative data only — replace with official downloads (see README).";
+});
+// ================= AUTO-LOAD BUNDLED REAL DATA (GitHub Pages) =================
+async function fetchText(path){const r=await fetch(path);if(!r.ok)throw new Error(r.status);return await r.text();}
+async function loadBundledConcept(slug){
+  try{ CIC=toObjs(parseCSV(await fetchText("data/"+slug+"_by_ic.csv")));
+       CSS=toObjs(parseCSV(await fetchText("data/"+slug+"_by_studysection.csv"))); renderConcept(); }catch(e){}
+}
+window.addEventListener("DOMContentLoaded",async()=>{
+  try{ ingestRCDC(await fetchText("data/rcdc_categorical_spending_FY2008-2025.csv")); }catch(e){}
+  try{ ODDS=toObjs(parseCSV(await fetchText("data/ic_success_rates_1998-2025.csv"))); detectOdds(); renderOdds(); }catch(e){}
+  const cs=document.getElementById("conceptSel");
+  if(cs){ cs.addEventListener("change",()=>loadBundledConcept(cs.value)); loadBundledConcept(cs.value); }
 });
 </script>
 </body>
