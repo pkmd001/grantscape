@@ -1,0 +1,638 @@
+study_section,n_projects,pct_of_matched,FY2015,FY2016,FY2017,FY2018,FY2019,FY2020,FY2021,FY2022,FY2023
+"Transplantation, Tolerance, and Tumor Immunology Study Section[TTT]",201,4.0,0,0,0,0,0,0,51,77,73
+Hepatobiliary Pathophysiology Study Section[HBPP],134,2.7,0,0,0,0,0,0,9,63,62
+Molecular and Cellular Hematology Study Section[MCH],134,2.7,0,0,0,0,0,0,29,63,42
+Developmental Therapeutics Study Section[DT],103,2.1,0,0,0,0,0,0,0,53,50
+Mechanisms of Cancer Therapeutics - 1 Study Section[MCT1],94,1.9,0,0,0,0,0,0,0,46,48
+Musculoskeletal Tissue Engineering Study Section[MTE],89,1.8,0,0,0,0,0,0,8,41,40
+Drug Discovery and Molecular Pharmacology Study Section[DMP],83,1.7,0,0,0,0,0,0,0,41,42
+Tumor Progression and Metastasis Study Section[TPM],79,1.6,0,0,0,0,0,0,0,42,37
+"Bioengineering, Technology and Surgical Sciences Study Section[BTSS]",78,1.6,0,0,0,0,0,0,12,32,34
+Biomaterials and Biointerfaces Study Section[BMBI],72,1.4,0,0,0,0,0,0,9,35,28
+Molecular Oncogenesis Study Section[MONC],67,1.3,0,0,0,0,0,0,2,34,31
+Cancer Immunopathology and Immunotherapy Study Section[CII],63,1.3,0,0,0,0,0,0,12,28,23
+Cancer Molecular Pathobiology Study Section[CAMP],63,1.3,0,0,0,0,0,0,0,30,33
+"Surgery, Anesthesiology and Trauma Study Section[SAT]",62,1.2,0,0,0,0,0,0,13,23,26
+Pathobiology of Kidney Disease Study Section[PBKD],61,1.2,0,0,0,0,0,0,5,25,31
+Mechanisms of Cancer Therapeutics - 2 Study Section[MCT2],60,1.2,0,0,0,0,0,0,1,29,30
+Clinical Oncology Study Section[CONC],58,1.2,0,0,0,0,0,0,6,28,24
+Tumor Cell Biology Study Section[TCB],57,1.1,0,0,0,0,0,0,2,32,23
+Therapeutic Approaches to Genetic Diseases Study Section[TAG],53,1.1,0,0,0,0,0,0,8,23,22
+(not assigned),50,1.0,0,0,0,0,0,0,7,21,22
+"Basic Biology of Blood, Heart and Vasculature Study Section [BBHV]",49,1.0,0,0,0,0,0,0,1,18,30
+Tumor Microenvironment Study Section[TME],44,0.9,0,0,0,0,0,0,0,24,20
+Skeletal Biology Development and Disease Study Section[SBDD],44,0.9,0,0,0,0,0,0,2,22,20
+Radiation Therapeutics and Biology Study Section[RTB],43,0.9,0,0,0,0,0,0,0,21,22
+"Kidney, Nutrition, Obesity and Diabetes Study Section[KNOD]",40,0.8,0,0,0,0,0,0,6,17,17
+Gene and Drug Delivery Systems Study Section[GDD],40,0.8,0,0,0,0,0,0,2,19,19
+Cancer Prevention Study Section[CPSS],40,0.8,0,0,0,0,0,0,0,17,23
+"Lung Injury, Repair, and Remodeling Study Section[LIRR]",39,0.8,0,0,0,0,0,0,2,19,18
+Cellular Aspects of Diabetes and Obesity Study Section[CADO],38,0.8,0,0,0,0,0,0,2,21,15
+Special Emphasis Panel[ZRG1-BDCN-J(81)S],37,0.7,0,0,0,0,0,0,8,18,11
+Cancer Genetics Study Section[CG],36,0.7,0,0,0,0,0,0,0,20,16
+"Hemostasis, Thrombosis, Blood Cells and Transfusion Study Section[HTBT]",33,0.7,0,0,0,0,0,0,0,12,21
+Cancer Biomarkers Study Section[CBSS],32,0.6,0,0,0,0,0,0,2,15,15
+"Lung Cellular, Molecular, and Immunobiology Study Section[LCMI]",32,0.6,0,0,0,0,0,0,6,13,13
+Clinical Neuroplasticity and Neurotransmitters Study Section[CNNT],31,0.6,0,0,0,0,0,0,4,12,15
+Integrative and Clinical Endocrinology and Reproduction Study Section[ICER],31,0.6,0,0,0,0,0,0,3,14,14
+Skeletal Muscle and Exercise Physiology Study Section[SMEP],29,0.6,0,0,0,0,0,0,2,13,14
+Modeling and Analysis of Biological Systems Study Section[MABS],28,0.6,0,0,0,0,0,0,3,15,10
+Respiratory Integrative Biology and Translational Research Study Section[RIBT],28,0.6,0,0,0,0,0,0,1,14,13
+Cellular and Molecular Technologies Study Section[CMT],28,0.6,0,0,0,0,0,0,1,13,14
+Cellular and Molecular Immunology - B Study Section[CMIB],28,0.6,0,0,0,0,0,0,0,13,15
+Skeletal Biology Structure and Regeneration Study Section[SBSR],28,0.6,0,0,0,0,0,0,0,15,13
+"Cardiac Contractility, Hypertrophy, and Failure Study Section[CCHF]",27,0.5,0,0,0,0,0,0,4,15,8
+Nanotechnology Study Section[NANO],27,0.5,0,0,0,0,0,0,0,15,12
+Imaging Probes and Contrast Agents Study Section[IPCA],26,0.5,0,0,0,0,0,0,0,13,13
+Clinical Translational Imaging Science Study Section[CTIS],26,0.5,0,0,0,0,0,0,1,11,14
+Neurogenesis and Cell Fate Study Section[NCF],26,0.5,0,0,0,0,0,0,4,12,10
+"Hypersensitivity, Autoimmune, and Immune-mediated Diseases Study Section[HAI]",26,0.5,0,0,0,0,0,0,1,14,11
+Biology of the Visual System Study Section[BVS],26,0.5,0,0,0,0,0,0,5,14,7
+Special Emphasis Panel[ZRG1-OTC-M(08)F],25,0.5,0,0,0,0,0,0,1,11,13
+Basic Mechanisms of Diabetes and Metabolism Study Section[BMDM],24,0.5,0,0,0,0,0,0,0,11,13
+"Cancer, Heart, and Sleep Epidemiology A Study Section[CHSA]",24,0.5,0,0,0,0,0,0,5,10,9
+"Bioengineering of Neuroscience, Vision and Low Vision Technologies Study Section[BNVT]",24,0.5,0,0,0,0,0,0,4,10,10
+Atherosclerosis and Inflammation of the Cardiovascular System Study Section[AICS],24,0.5,0,0,0,0,0,0,2,16,6
+"Oral, Dental and Craniofacial Sciences Study Section[ODCS]",24,0.5,0,0,0,0,0,0,0,10,14
+Imaging Guided Interventions and Surgery Study Section[IGIS],23,0.5,0,0,0,0,0,0,2,11,10
+Gastrointestinal Mucosal Pathobiology Study Section[GMPB],23,0.5,0,0,0,0,0,0,3,10,10
+"Arthritis, Connective Tissue and Skin Study Section[ACTS]",23,0.5,0,0,0,0,0,0,0,11,12
+Cancer Etiology Study Section[CE],23,0.5,0,0,0,0,0,0,0,10,13
+Clinical Research and Field Studies of Infectious Diseases Study Section[CRFS],22,0.4,0,0,0,0,0,0,5,10,7
+Xenobiotic and Nutrient Disposition and Action Study Section[XNDA],21,0.4,0,0,0,0,0,0,1,9,11
+Clinical and Integrative Cardiovascular Sciences Study Section[CICS],20,0.4,0,0,0,0,0,0,2,11,7
+Special Emphasis Panel[ZRG1-MCT2-C(01)S],20,0.4,0,0,0,0,0,0,0,10,10
+Clinical Neuroimmunology and Brain Tumors Study Section[CNBT],20,0.4,0,0,0,0,0,0,0,11,9
+Basic Mechanisms  of Cancer Therapeutics Study Section[BMCT],20,0.4,0,0,0,0,0,0,0,14,6
+"Cellular, Molecular and Integrative Reproduction Study Section[CMIR]",19,0.4,0,0,0,0,0,0,2,7,10
+Myocardial Ischemia and Metabolism Study Section[MIM],19,0.4,0,0,0,0,0,0,5,10,4
+Health Services Organization and Delivery Study Section[HSOD],18,0.4,0,0,0,0,0,0,4,10,4
+Special Emphasis Panel[ZRG1-VH-C(02)M],18,0.4,0,0,0,0,0,0,2,9,7
+Special Emphasis Panel[ZRG1-ETTN-P(81)S],18,0.4,0,0,0,0,0,0,0,7,11
+Innate Immunity and Inflammation Study Section[III],18,0.4,0,0,0,0,0,0,1,9,8
+Instrumentation and Systems Development Study Section[ISD],18,0.4,0,0,0,0,0,0,0,8,10
+Kidney Molecular Biology and Genitourinary Organ Development[KMBD],17,0.3,0,0,0,0,0,0,1,9,7
+Cardiovascular Differentiation and Development Study Section[CDD],17,0.3,0,0,0,0,0,0,1,8,8
+Brain Injury and Neurovascular Pathologies Study Section[BINP],16,0.3,0,0,0,0,0,0,4,6,6
+Aging Systems and Geriatrics Study Section[ASG],16,0.3,0,0,0,0,0,0,2,7,7
+"Cancer, Heart, and Sleep Epidemiology B Study Section[CHSB]",16,0.3,0,0,0,0,0,0,2,8,6
+Virology - A Study Section[VIRA],16,0.3,0,0,0,0,0,0,0,9,7
+Emerging Imaging Technologies and Applications Study Section[EITA],15,0.3,0,0,0,0,0,0,0,6,9
+Kidney and Urological Systems Function and Dysfunction Study Section[KUFD],15,0.3,0,0,0,0,0,0,0,4,11
+HIV Comorbidities and Clinical Studies Study Section[HCCS],15,0.3,0,0,0,0,0,0,1,6,8
+"Digestive System Host Defense, Microbial Interactions and Immune and Inflammatory Disease Study Section[DHMI]",14,0.3,0,0,0,0,0,0,0,4,10
+Pathophysiology of Eye Disease - 2 Study Section[PED2],14,0.3,0,0,0,0,0,0,1,5,8
+Atherosclerosis and Vascular Inflammation Study Section[AVI],14,0.3,0,0,0,0,0,0,0,6,8
+Integrative Nutrition and Metabolic Processes Study Section[INMP],14,0.3,0,0,0,0,0,0,0,8,6
+HIV Coinfections and HIV Associated Cancers Study Section[HCAC],14,0.3,0,0,0,0,0,0,0,7,7
+Cellular Signaling and Regulatory Systems Study Section[CSRS],14,0.3,0,0,0,0,0,0,0,7,7
+ZHD1-DSR-Y(53),14,0.3,0,0,0,0,0,0,0,7,7
+Clinical and Integrative Diabetes and Obesity Study Section[CIDO],13,0.3,0,0,0,0,0,0,1,6,6
+Pathophysiology of Eye Disease - 1 Study Section[PED1],13,0.3,0,0,0,0,0,0,0,5,8
+Cellular and Molecular Immunology - A Study Section[CMIA],13,0.3,0,0,0,0,0,0,0,7,6
+Integrative Physiology of Obesity and Diabetes Study Section[IPOD],13,0.3,0,0,0,0,0,0,1,8,4
+Development - 1 Study Section[DEV1],13,0.3,0,0,0,0,0,0,2,7,4
+Cellular and Molecular Biology of Glia Study Section[CMBG],13,0.3,0,0,0,0,0,0,0,7,6
+Special Emphasis Panel[ZRG1-VH-D(02)M],12,0.2,0,0,0,0,0,0,1,6,5
+Intercellular Interactions Study Section[ICI],12,0.2,0,0,0,0,0,0,1,6,5
+Integrative Myocardial Physiology/Pathophysiology A Study Section [MPPA],12,0.2,0,0,0,0,0,0,0,5,7
+Biostatistical Methods and Research Design Study Section[BMRD],12,0.2,0,0,0,0,0,0,2,6,4
+Systemic Injury by Environmental Exposure[SIEE],12,0.2,0,0,0,0,0,0,0,5,7
+Cell Signaling and Molecular Endocrinology Study Section[CSME],11,0.2,0,0,0,0,0,0,0,5,6
+Pregnancy and Neonatology Study Section[PN],11,0.2,0,0,0,0,0,0,0,6,5
+Biology and Development of the Eye Study Section[BDE],11,0.2,0,0,0,0,0,0,0,5,6
+Development - 2 Study Section[DEV2],11,0.2,0,0,0,0,0,0,0,5,6
+"Infectious Diseases, Reproductive Health, Asthma and Pulmonary Conditions Study Section[IRAP]",11,0.2,0,0,0,0,0,0,1,6,4
+Vascular Cell and Molecular Biology Study Section[VCMB],10,0.2,0,0,0,0,0,0,1,6,3
+Special Emphasis Panel[ZRG1-OTC-N(55)R],10,0.2,0,0,0,0,0,0,0,5,5
+Genetics of Health and Disease Study Section[GHD],10,0.2,0,0,0,0,0,0,2,3,5
+Nutrition and Metabolism in Health and Disease Study Section[NMHD],10,0.2,0,0,0,0,0,0,0,4,6
+Vaccines Against Microbial Diseases Study Section[VMD],10,0.2,0,0,0,0,0,0,0,6,4
+Drug Discovery and Mechanisms of Antimicrobial Resistance Study Section[DDR],10,0.2,0,0,0,0,0,0,1,5,4
+Immunity and Host Defense Study Section[IHD],10,0.2,0,0,0,0,0,0,0,5,5
+Cellular Mechanisms in Aging and Development Study Section[CMAD],10,0.2,0,0,0,0,0,0,0,5,5
+Molecular and Cellular Endocrinology Study Section[MCE],10,0.2,0,0,0,0,0,0,2,5,3
+Special Emphasis Panel[ZRG1-BMCT-C(01)S],10,0.2,0,0,0,0,0,0,0,10,0
+Special Emphasis Panel[ZAA1 DD (03)],9,0.2,0,0,0,0,0,0,0,1,8
+ZAG1-ZIJ-5(M1),9,0.2,0,0,0,0,0,0,2,4,3
+Neurotoxicology and Alcohol Study Section[NAL],9,0.2,0,0,0,0,0,0,0,5,4
+Special Emphasis Panel[ZRG1-IMST-H(55)R],9,0.2,0,0,0,0,0,0,0,4,5
+Acute Neural Injury and Epilepsy Study Section[ANIE],9,0.2,0,0,0,0,0,0,0,4,5
+Mechanisms of Cancer Therapeutics B Study Section[MCTB],9,0.2,0,0,0,0,0,0,0,0,9
+Special Emphasis Panel[ZRG1-CB-F(55)R],8,0.2,0,0,0,0,0,0,2,4,2
+Health Services: Quality and Effectiveness Study Section[HSQE],8,0.2,0,0,0,0,0,0,1,2,5
+HIV Immunopathogenesis and Vaccine Development Study Section[HIVD],8,0.2,0,0,0,0,0,0,0,3,5
+ZAI1-NVM-I(M1),8,0.2,0,0,0,0,0,0,2,3,3
+Special Emphasis Panel[ZRG1-CVRS-G(03)],8,0.2,0,0,0,0,0,0,1,3,4
+Biodata Management and Analysis Study Section[BDMA],8,0.2,0,0,0,0,0,0,1,6,1
+Special Emphasis Panel[ZRG1-DKUS-T(90)],8,0.2,0,0,0,0,0,0,1,4,3
+Pathogenic Eukaryotes Study Section[PTHE],8,0.2,0,0,0,0,0,0,0,3,5
+Special Emphasis Panel[ZRG1-DNPD-A(01)],8,0.2,0,0,0,0,0,0,0,4,4
+Developmental Brain Disorders Study Section[DBD],8,0.2,0,0,0,0,0,0,0,4,4
+Special Emphasis Panel[ZRG1-SBIB-Q(03)M],8,0.2,0,0,0,0,0,0,0,3,5
+Mechanisms of Cancer Therapeutics A Study Section[MCTA],8,0.2,0,0,0,0,0,0,0,0,8
+Special Emphasis Panel[ZRG1-OTC-C(56)R],8,0.2,0,0,0,0,0,0,0,5,3
+Medical Imaging Study Section[MEDI],8,0.2,0,0,0,0,0,0,0,5,3
+Special Emphasis Panel[ZRG1 MCTC-S (01)],8,0.2,0,0,0,0,0,0,0,0,8
+Human Studies of Diabetes and Obesity Study Section[HSDO],7,0.1,0,0,0,0,0,0,1,3,3
+"Neurodifferentiation, Plasticity, Regeneration and Rhythmicity Study Section[NDPR]",7,0.1,0,0,0,0,0,0,1,3,3
+Special Emphasis Panel[ZRG1-TDPS-R(01)],7,0.1,0,0,0,0,0,0,0,1,6
+Organization and Delivery of Health Services Study Section[ODHS],7,0.1,0,0,0,0,0,0,0,2,5
+"Genomics, Computational Biology and Technology Study Section[GCAT]",7,0.1,0,0,0,0,0,0,1,3,3
+ZCA1-RPRB-Z(J1),7,0.1,0,0,0,0,0,0,2,4,1
+Auditory System Study Section[AUD],7,0.1,0,0,0,0,0,0,0,4,3
+Special Emphasis Panel[ZRG1-EMNR-V(02)M],7,0.1,0,0,0,0,0,0,0,4,3
+Hypertension and Microcirculation Study Section[HM],7,0.1,0,0,0,0,0,0,0,4,3
+Virology - B Study Section[VIRB],7,0.1,0,0,0,0,0,0,0,5,2
+ZCA1-SRB-1(J2),7,0.1,0,0,0,0,0,0,0,3,4
+Integrative Vascular Physiology and Pathology Study Section[IVPP],7,0.1,0,0,0,0,0,0,0,3,4
+Special Emphasis Panel[ZRG1-OTC-J(55)R],7,0.1,0,0,0,0,0,0,0,4,3
+Special Emphasis Panel[ZRG1-OBT-D(02)M],7,0.1,0,0,0,0,0,0,0,3,4
+Special Emphasis Panel[ZRG1-BST-F(55)R],7,0.1,0,0,0,0,0,0,0,5,2
+Special Emphasis Panel[ZRG1-OBT-Q(02)M],7,0.1,0,0,0,0,0,0,0,3,4
+Enabling Bioanalytical and Imaging Technologies Study Section[EBIT],7,0.1,0,0,0,0,0,0,0,4,3
+Cellular Immunotherapy of Cancer Study Section[CIC],6,0.1,0,0,0,0,0,0,0,0,6
+Dissemination and Implementation Research in Health Study Section[DIRH],6,0.1,0,0,0,0,0,0,2,2,2
+Special Emphasis Panel[ZRG1 TDPS-R (01)],6,0.1,0,0,0,0,0,0,0,5,1
+Special Emphasis Panel[ZRG1-DKUS-M(04)],6,0.1,0,0,0,0,0,0,1,4,1
+Special Emphasis Panel[ZRG1-BDCN-E(02)M],6,0.1,0,0,0,0,0,0,1,2,3
+ZHL1-CSR-M(F1),6,0.1,0,0,0,0,0,0,1,3,2
+Nursing and Related Clinical Sciences Study Section[NRCS],6,0.1,0,0,0,0,0,0,2,3,1
+Special Emphasis Panel[ZRG1-BDCN-R(02)M],6,0.1,0,0,0,0,0,0,1,2,3
+Special Emphasis Panel[ZRG1-IMM-T(57)],6,0.1,0,0,0,0,0,0,1,3,2
+Special Emphasis Panel[ZRG1-BDCN-R(03)S],6,0.1,0,0,0,0,0,0,1,3,2
+Special Emphasis Panel[ZRG1-CVRS-N(03)],6,0.1,0,0,0,0,0,0,1,2,3
+Clinical Integrative Cardiovascular and Hematological Sciences Study Section[CCHS],6,0.1,0,0,0,0,0,0,0,2,4
+Special Emphasis Panel[ZRG1-VH-C(02)],6,0.1,0,0,0,0,0,0,2,3,1
+Diseases and Pathophysiology of the Visual System Study Section[DPVS],6,0.1,0,0,0,0,0,0,1,3,2
+Macromolecular Structure and Function A Study Section[MSFA],6,0.1,0,0,0,0,0,0,0,3,3
+Synthetic and Biological Chemistry A Study Section[SBCA],6,0.1,0,0,0,0,0,0,0,3,3
+ZDA1-GXM-A(07)R,6,0.1,0,0,0,0,0,0,0,3,3
+Special Emphasis Panel[ZRG1-OTC1-M(80)S],6,0.1,0,0,0,0,0,0,0,0,6
+Special Emphasis Panel[ZRG1-VH-D(55)R],6,0.1,0,0,0,0,0,0,2,3,1
+"Tumor Evolution, Heterogeneity and Metastasis Study Section[TEHM]",6,0.1,0,0,0,0,0,0,0,0,6
+Cellular and Molecular Biology of Neurodegeneration Study Section[CMND],6,0.1,0,0,0,0,0,0,0,3,3
+Special Emphasis Panel[ZRG1-MOSS-R(02)M],6,0.1,0,0,0,0,0,0,0,3,3
+Clinical Molecular Imaging and Probe Development[CMIP],6,0.1,0,0,0,0,0,0,0,4,2
+Special Emphasis Panel[ZRG1-IMST-K(55)R],6,0.1,0,0,0,0,0,0,0,3,3
+Special Emphasis Panel[ZRG1-CVRS-A(05)],5,0.1,0,0,0,0,0,0,0,2,3
+Basic Mechanisms of Cancer Health Disparities Study Section[BMCD],5,0.1,0,0,0,0,0,0,0,0,5
+Special Emphasis Panel[ZRG1-IMM-F(02)M],5,0.1,0,0,0,0,0,0,1,2,2
+Imaging Technology Development Study Section[ITD],5,0.1,0,0,0,0,0,0,0,1,4
+Special Emphasis Panel[ZRG1-SBIB-D(02)M],5,0.1,0,0,0,0,0,0,1,2,2
+Special Emphasis Panel[ZRG1-EMNR-C(02)M],5,0.1,0,0,0,0,0,0,1,2,2
+"Behavioral Medicine, Interventions and Outcomes Study Section[BMIO]",5,0.1,0,0,0,0,0,0,2,2,1
+Interdisciplinary Clinical Care in Specialty Care Settings Study Section[ICSC],5,0.1,0,0,0,0,0,0,0,2,3
+Special Emphasis Panel[ZRG1-EMNR-B(50)R],5,0.1,0,0,0,0,0,0,1,3,1
+Special Emphasis Panel[ZRG1-DKUS-J(03)],5,0.1,0,0,0,0,0,0,2,2,1
+"Neurotransporters, Receptors, and Calcium Signaling Study Section[NTRC]",5,0.1,0,0,0,0,0,0,1,3,1
+Integrative Myocardial Physiology/Pathophysiology B Study Section[MPPB],5,0.1,0,0,0,0,0,0,0,0,5
+Synthetic and Biological Chemistry B Study Section[SBCB],5,0.1,0,0,0,0,0,0,0,2,3
+Drug Discovery for the Nervous System Study Section[DDNS],5,0.1,0,0,0,0,0,0,0,2,3
+"Behavioral Neuroendocrinology, Neuroimmunology, Rhythms, and Sleep Study Section [BNRS]",5,0.1,0,0,0,0,0,0,0,0,5
+Special Emphasis Panel[ZRG1-SBIB-Q(02)M],5,0.1,0,0,0,0,0,0,0,4,1
+Digestive and Nutrient Physiology and Diseases Study Section [DNPD],5,0.1,0,0,0,0,0,0,0,1,4
+Special Emphasis Panel[ZRG1-IMM-C(02)],5,0.1,0,0,0,0,0,0,1,2,2
+Special Emphasis Panel[ZRG1-IMST-A(55)R],5,0.1,0,0,0,0,0,0,0,3,2
+Chemo/Dietary Prevention Study Section[CDP],5,0.1,0,0,0,0,0,0,0,4,1
+Special Emphasis Panel[ZRG1-SBIB-Z(02)M],5,0.1,0,0,0,0,0,0,1,3,1
+Special Emphasis Panel[ZRG1 ETTN-P (81)],5,0.1,0,0,0,0,0,0,0,5,0
+Special Emphasis Panel[ZRG1 OTC1-M (80)],5,0.1,0,0,0,0,0,0,0,5,0
+ZDK1-GRB-G(O3)S,5,0.1,0,0,0,0,0,0,5,0,0
+Special Emphasis Panel[ZRG1-BST-V(02)M],4,0.1,0,0,0,0,0,0,0,2,2
+Kidney Endocrine and Digestive Disorders Study Section[KEDD],4,0.1,0,0,0,0,0,0,0,0,4
+Clinical Data Management and Analysis Study Section[CDMA],4,0.1,0,0,0,0,0,0,0,1,3
+"HIV Molecular Virology, Cell Biology, and Drug Development Study Section[HVCD]",4,0.1,0,0,0,0,0,0,0,1,3
+ZDK1-GRB-G(M3)S,4,0.1,0,0,0,0,0,0,0,0,4
+Special Emphasis Panel[ZRG1-DKUS-R(04)],4,0.1,0,0,0,0,0,0,1,1,2
+Special Emphasis Panel[ZRG1-CCHF-S(01)],4,0.1,0,0,0,0,0,0,0,2,2
+ZAG1-ZIJ-P(J1),4,0.1,0,0,0,0,0,0,0,2,2
+Special Emphasis Panel[ZRG1-CVRS-C(02)],4,0.1,0,0,0,0,0,0,0,2,2
+Special Emphasis Panel[ZRG1-DKUS-A(90)],4,0.1,0,0,0,0,0,0,0,2,2
+Chronic Dysfunction and Integrative Neurodegeneration Study Section[CDIN],4,0.1,0,0,0,0,0,0,0,1,3
+ZGM1-BBCB-5(BM),4,0.1,0,0,0,0,0,0,0,2,2
+Special Emphasis Panel[ZRG1-DKUS-M(50)],4,0.1,0,0,0,0,0,0,0,2,2
+Special Emphasis Panel[ZRG1 TIO-D (01)],4,0.1,0,0,0,0,0,0,0,0,4
+Special Emphasis Panel[ZRG1-DKUS-P(02)],4,0.1,0,0,0,0,0,0,1,2,1
+Chemosensory Systems Study Section[CSS],4,0.1,0,0,0,0,0,0,0,2,2
+ZAG1-ZIJ-P(A1),4,0.1,0,0,0,0,0,0,0,2,2
+Molecular Genetics A Study Section[MGA],4,0.1,0,0,0,0,0,0,0,2,2
+Special Emphasis Panel[ZRG1-IMST-U(55)R],4,0.1,0,0,0,0,0,0,0,1,3
+Special Emphasis Panel[ZRG1-OTC-L(02)M],4,0.1,0,0,0,0,0,0,0,1,3
+Special Emphasis Panel[ZRG1-SBIB-Q(57)R],4,0.1,0,0,0,0,0,0,0,2,2
+Special Emphasis Panel[ZRG1 OBT-Y (55)],4,0.1,0,0,0,0,0,0,0,2,2
+Special Emphasis Panel[ZRG1 OTC-D (08)],4,0.1,0,0,0,0,0,0,0,2,2
+Molecular Genetics B Study Section[MGB],4,0.1,0,0,0,0,0,0,0,2,2
+Special Emphasis Panel[ZRG1 OTC1-A (80)],4,0.1,0,0,0,0,0,0,0,0,4
+Biochemical and Cellular Oncogenesis Study Section[BCO],4,0.1,0,0,0,0,0,0,0,0,4
+Special Emphasis Panel[ZRG1-CB-S(02)M],4,0.1,0,0,0,0,0,0,0,2,2
+Special Emphasis Panel[ZRG1-EMNR-H(02)M],4,0.1,0,0,0,0,0,0,0,2,2
+Special Emphasis Panel[ZRG1-OBT-Z(55)R],4,0.1,0,0,0,0,0,0,0,3,1
+Molecular and Integrative Signal Transduction Study Section[MIST],4,0.1,0,0,0,0,0,0,0,3,1
+ZAG1-ZIJ-G(A1),4,0.1,0,0,0,0,0,0,0,2,2
+Special Emphasis Panel[ZRG1-DKUS-H(04)],4,0.1,0,0,0,0,0,0,1,1,2
+Special Emphasis Panel[ZRG1-IMM-T(02)],4,0.1,0,0,0,0,0,0,1,2,1
+ZCA1-RPRB-H(J2),4,0.1,0,0,0,0,0,0,0,2,2
+Special Emphasis Panel[ZRG1-ETTN-L(53)R],4,0.1,0,0,0,0,0,0,0,4,0
+ZDK1-GRB-J(M1)S,4,0.1,0,0,0,0,0,0,4,0,0
+Special Emphasis Panel[ZRG1-IDIB-J(02)],3,0.1,0,0,0,0,0,0,0,0,3
+Therapeutic Development and Preclinical Studies Study Section[TDPS],3,0.1,0,0,0,0,0,0,0,0,3
+Special Emphasis Panel[ZRG1 KUDS-W (05)],3,0.1,0,0,0,0,0,0,0,0,3
+Special Emphasis Panel[ZDK1 GRB-J (M1)],3,0.1,0,0,0,0,0,0,0,0,3
+Special Emphasis Panel[ZRG1-HDM-A(57)],3,0.1,0,0,0,0,0,0,1,1,1
+ZCA1-SRB-K(J1)R,3,0.1,0,0,0,0,0,0,1,1,1
+Special Emphasis Panel[ZRG1-MOSS-R(02)S],3,0.1,0,0,0,0,0,0,1,1,1
+Special Emphasis Panel[ZRG1-SBIB-N(52)R],3,0.1,0,0,0,0,0,0,1,1,1
+Special Emphasis Panel[ZRG1-EMNR-F(50)R],3,0.1,0,0,0,0,0,0,0,1,2
+Special Emphasis Panel[ZRG1-DKUS-B(90)],3,0.1,0,0,0,0,0,0,1,1,1
+Clinical Management of Patients in Community-based Settings Study Section[CMPC],3,0.1,0,0,0,0,0,0,1,1,1
+Healthcare and Health Disparities Study Section[HHD],3,0.1,0,0,0,0,0,0,0,1,2
+Special Emphasis Panel[ZRG1(81)-S],3,0.1,0,0,0,0,0,0,0,2,1
+Special Emphasis Panel[ZRG1-DKUS-R(90)],3,0.1,0,0,0,0,0,0,1,1,1
+Special Emphasis Panel[ZRG1-IDIB-J(50)R],3,0.1,0,0,0,0,0,0,0,0,3
+Special Emphasis Panel[ZRG1-OTC1-J(55)R],3,0.1,0,0,0,0,0,0,0,0,3
+Special Emphasis Panel[ZRG1-CNBT-W(07)S],3,0.1,0,0,0,0,0,0,0,2,1
+Special Emphasis Panel[ZRG1-MDCN-P(57)R],3,0.1,0,0,0,0,0,0,0,2,1
+Special Emphasis Panel[ZRG1-BDCN-E(03)],3,0.1,0,0,0,0,0,0,0,1,2
+"Electrical Signaling, Ion Transport, and Arrhythmias Study Section[ESTA]",3,0.1,0,0,0,0,0,0,0,2,1
+Special Emphasis Panel[ZRG1-DKUS-H(06)],3,0.1,0,0,0,0,0,0,0,2,1
+Special Emphasis Panel[ZRG1-BST-J(70)R],3,0.1,0,0,0,0,0,0,0,1,2
+Hemostasis and Thrombosis Study Section.  Committee was terminated on 11/30/2020. [HT],3,0.1,0,0,0,0,0,0,0,2,1
+Special Emphasis Panel[ZRG1 EMNR-B (02)],3,0.1,0,0,0,0,0,0,0,2,1
+Special Emphasis Panel[ZRG1 BBBT-J (83)],3,0.1,0,0,0,0,0,0,0,0,3
+"Neurological, Aging and Musculoskeletal Epidemiology Study Section[NAME]",3,0.1,0,0,0,0,0,0,0,2,1
+Cancer Cell Biology Study Section[CCB],3,0.1,0,0,0,0,0,0,0,0,3
+Drug Discovery and Molecular Pharmacology C Study Section[DMPC],3,0.1,0,0,0,0,0,0,0,0,3
+Special Emphasis Panel[ZRG1 VH-C (02)],3,0.1,0,0,0,0,0,0,0,2,1
+Clinical Informatics and Digital Health Study Section[CIDH],3,0.1,0,0,0,0,0,0,0,1,2
+Gene Regulation in Cancer Study Section[GRIC],3,0.1,0,0,0,0,0,0,0,0,3
+"Advancing Therapeutics A Study Section
+[ATA]",3,0.1,0,0,0,0,0,0,0,0,3
+Special Emphasis Panel[ZRG1 EMNR-S (55)],3,0.1,0,0,0,0,0,0,0,2,1
+Special Emphasis Panel[ZRG1-OBT-B(02)M],3,0.1,0,0,0,0,0,0,0,2,1
+AIDS Immunology and Pathogenesis Study Section[AIP],3,0.1,0,0,0,0,0,0,1,1,1
+Musculoskeletal Rehabilitation Sciences Study Section[MRS],3,0.1,0,0,0,0,0,0,0,2,1
+Special Emphasis Panel[ZRG1 IDIB-J (02)],3,0.1,0,0,0,0,0,0,0,3,0
+Special Emphasis Panel[ZDK1 GRB-G (M3)],3,0.1,0,0,0,0,0,0,0,3,0
+Special Emphasis Panel[ZRG1-CB-J(55)R],3,0.1,0,0,0,0,0,0,1,2,0
+Special Emphasis Panel[ZRG1 IDIB-J (50)],3,0.1,0,0,0,0,0,0,0,3,0
+Special Emphasis Panel[ZRG1 OTC1-J (55)],3,0.1,0,0,0,0,0,0,0,3,0
+Special Emphasis Panel[ZRG1 OTC1-B (80)],3,0.1,0,0,0,0,0,0,0,3,0
+ZHD1-DSR-L(50),3,0.1,0,0,0,0,0,0,0,3,0
+Special Emphasis Panel[ZCA1 RPRB-6 (J2)],3,0.1,0,0,0,0,0,0,0,3,0
+ZCA1-SRB-A(M1),3,0.1,0,0,0,0,0,0,0,3,0
+Special Emphasis Panel[ZRG1-SBIB-H(82)],3,0.1,0,0,0,0,0,0,3,0,0
+Special Emphasis Panel[ZRG1-EMNR-B(02)M],2,0.0,0,0,0,0,0,0,0,0,2
+"Biobehavioral Mechanisms of Emotion, Stress and Health Study Section[MESH]",2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-IMM-C(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-GGG-X(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+ZAI1-KSW-A(S1),2,0.0,0,0,0,0,0,0,0,0,2
+Special Emphasis Panel[ZRG1-IMST-D(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-BBBP-S(55)R],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-BCMB-D(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+ZDK1-GRB-J(J1)S,2,0.0,0,0,0,0,0,0,0,0,2
+Special Emphasis Panel[ZRG1-MDCN-G(05)M],2,0.0,0,0,0,0,0,0,0,1,1
+Biobehavioral Medicine and Health Outcomes Study Section[BMHO],2,0.0,0,0,0,0,0,0,0,1,1
+Pathophysiology of Obesity and Metabolic Disease Study Section[POMD],2,0.0,0,0,0,0,0,0,0,0,2
+Special Emphasis Panel[ZRG1 NV-P (81)],2,0.0,0,0,0,0,0,0,0,0,2
+Special Emphasis Panel[ZRG1-SEIR-A(80)S],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1 DCAI-B (82)],2,0.0,0,0,0,0,0,0,0,0,2
+Special Emphasis Panel[ZRG1-PN-A(07)S],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-SEIR-S(80)S],2,0.0,0,0,0,0,0,0,0,1,1
+Cardiovascular and Respiratory Diseases Study Section[CRD],2,0.0,0,0,0,0,0,0,0,0,2
+ZDE1-CF(12),2,0.0,0,0,0,0,0,0,0,1,1
+ZDK1-GRB-B(M2)S,2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-MDCN-P(56)R],2,0.0,0,0,0,0,0,0,0,1,1
+ZAI1-MFH-M(J1),2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1(02)-S],2,0.0,0,0,0,0,0,0,1,0,1
+Special Emphasis Panel[ZRG1-IDIA-U(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-CB-A(50)R],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-BDCN-R(02)S],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-CB-Z(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-MDCN-N(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-IDM-M(02)],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-IDIA-E(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-MIM-R(01)],2,0.0,0,0,0,0,0,0,0,1,1
+Cellular and Molecular Biology of Glia Study Section[CMBG-R],2,0.0,0,0,0,0,0,0,0,0,2
+Special Emphasis Panel[ZRG1-AIDC-Q(83)],2,0.0,0,0,0,0,0,0,0,0,2
+Special Emphasis Panel[ZRG1-HDM-F(03)],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-BDCN-N(55)R],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-EMNR-S(55)R],2,0.0,0,0,0,0,0,0,0,0,2
+Special Emphasis Panel[ZRG1-BCMB-G(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1(02)-M],2,0.0,0,0,0,0,0,0,0,1,1
+Biochemistry and Biophysics of Membranes Study Section[BBM],2,0.0,0,0,0,0,0,0,0,1,1
+Host Interactions with Bacterial Pathogens Study Section[HIBP],2,0.0,0,0,0,0,0,0,0,1,1
+Bacterial Pathogenesis Study Section[BACP],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZHD1 DSR-A (50)],2,0.0,0,0,0,0,0,0,0,0,2
+Neurobiology of Motivated Behavior Study Section[NMB],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-DKUS-J(05)],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-AARR-P(58)R],2,0.0,0,0,0,0,0,0,0,1,1
+"Social Psychology, Personality and Interpersonal Processes Study Section[SPIP]",2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-DKUS-D(90)],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-IMM-K(50)],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-OBT-S(02)M],2,0.0,0,0,0,0,0,0,0,0,2
+Special Emphasis Panel[ZRG1-IMM-H(02)],2,0.0,0,0,0,0,0,0,0,1,1
+ZAG1-ZIJ-D(J1),2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-BDCN-W(03)M],2,0.0,0,0,0,0,0,0,0,1,1
+"Motor Function, Speech and Rehabilitation Study Section[MFSR]",2,0.0,0,0,0,0,0,0,0,1,1
+ZHL1-CSR-Z(M2),2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-DKUS-L(06)],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-OTC-D(08)F],2,0.0,0,0,0,0,0,0,0,0,2
+Special Emphasis Panel[ZRG1-OTC1-B(60)C],2,0.0,0,0,0,0,0,0,0,0,2
+Tumor Host Interactions Study Section[THI],2,0.0,0,0,0,0,0,0,0,0,2
+Special Emphasis Panel[ZRG1 BTC-C (02)],2,0.0,0,0,0,0,0,0,0,0,2
+ZAG1-ZIJ-P(J4),2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-GGG-S(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-IMST-K(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+ZES1-LAT-D(R1),2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-MOSS-V(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-AIDC-F(83)],2,0.0,0,0,0,0,0,0,0,0,2
+Special Emphasis Panel[ZRG1-IDM-W(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-MDCN-R(04)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-DKUS-P(03)],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-IFCN-B(03)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-BBBP-B(55)R],2,0.0,0,0,0,0,0,0,0,1,1
+ZAI1-KKS-A(J1),2,0.0,0,0,0,0,0,0,0,1,1
+Membrane Biology and Protein Processing Study Section[MBPP],2,0.0,0,0,0,0,0,0,0,1,1
+ZCA1-SRB-K(M2)R,2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-IDM-W(02)],2,0.0,0,0,0,0,0,0,0,1,1
+Emerging Imaging Technologies in Neuroscience Study Section[EITN],2,0.0,0,0,0,0,0,0,0,1,1
+NeuroAIDS and other End-Organ Diseases Study Section[NAED],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-MDCN-P(57)S],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-EMNR-H(50)R],2,0.0,0,0,0,0,0,0,0,0,2
+Special Emphasis Panel[ZRG1-RPHB-R(56)R],2,0.0,0,0,0,0,0,0,0,1,1
+ZCA1-TCRB-Q(J1),2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-BDCN-J(91)],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-RPHB-R(59)R],2,0.0,0,0,0,0,0,0,0,1,1
+ZCA1-SRB-5(J1),2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-OTC-H(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-OTC-E(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-SBIB-D(82)S],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-PSE-F(02)],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-IMM-N(90)S],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-MDCN-T(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-CB-C(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-OBT-Y(55)R],2,0.0,0,0,0,0,0,0,0,0,2
+ZMH1-ERB-M(08),2,0.0,0,0,0,0,0,0,0,1,1
+ZCA1-SRB-E(M1)R,2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1 SBIB-S (57)],2,0.0,0,0,0,0,0,0,0,0,2
+Neurobiology of Pain and Itch Study Section [NPI],2,0.0,0,0,0,0,0,0,0,1,1
+"Neuroendocrinology, Neuroimmunology, Rhythms and Sleep Study Section[NNRS]",2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-OBT-B(55)R],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-OTC-K(03)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-MDCN-E(56)R],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-HDM-F(02)],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-OBT-K(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-MDCN-M(91)S],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-IMM-K(52)],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-SBIB-Q(90)S],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-AARR-P(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-IDIA-W(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-OBT-S(55)R],2,0.0,0,0,0,0,0,0,0,1,1
+ZCA1-SRB-T(M1),2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-ETTN-K(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-PSE-N(55)],2,0.0,0,0,0,0,0,0,0,1,1
+ZDE1-YM(08),2,0.0,0,0,0,0,0,0,0,1,1
+Health Disparities and Equity Promotion Study Section[HDEP],2,0.0,0,0,0,0,0,0,0,1,1
+Molecular Genetics Study Section[MG],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-CB-F(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-DKUS-H(02)],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-DKUS-A(04)],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-BDCN-W(90)S],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-EMNR-F(55)R],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-AARR-Q(50)R],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-MOSS-Q(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+ZAI1-JBS-A(J1),2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-HDM-E(09)],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1 OTC-L (02)],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-OBT-J(55)R],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-AIDC-Y(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-OTC-B(02)M],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-PSE-W(56)R],2,0.0,0,0,0,0,0,0,0,1,1
+AIDS-associated Opportunistic Infections and Cancer Study Section[AOIC],2,0.0,0,0,0,0,0,0,0,1,1
+Special Emphasis Panel[ZRG1-IMM-M(02)],2,0.0,0,0,0,0,0,0,1,1,0
+ZCA1-RPRB-Z(M3),2,0.0,0,0,0,0,0,0,1,1,0
+Special Emphasis Panel[ZRG1-HDM-C(05)],2,0.0,0,0,0,0,0,0,1,1,0
+ZCA1-RTRB-R(J2),2,0.0,0,0,0,0,0,0,1,1,0
+Special Emphasis Panel[ZRG1-IMM-J(03)],2,0.0,0,0,0,0,0,0,1,1,0
+Special Emphasis Panel[ZRG1-BDCN-N(90)S],2,0.0,0,0,0,0,0,0,1,1,0
+Special Emphasis Panel[ZRG1-IMM-C(03)],2,0.0,0,0,0,0,0,0,1,1,0
+Special Emphasis Panel[ZAI1 KSW-A (S1)],2,0.0,0,0,0,0,0,0,0,2,0
+Clinical Neuroscience and Neurodegeneration Study Section[CNN],2,0.0,0,0,0,0,0,0,1,1,0
+Special Emphasis Panel[ZRG1-BDCN-Y(02)M],2,0.0,0,0,0,0,0,0,1,1,0
+Special Emphasis Panel[ZRG1-OBT-E(55)R],2,0.0,0,0,0,0,0,0,1,1,0
+Special Emphasis Panel[ZDK1 GRB-J (J1)],2,0.0,0,0,0,0,0,0,0,2,0
+Special Emphasis Panel[ZRG1-MOSS-S(02)M],2,0.0,0,0,0,0,0,0,1,1,0
+Special Emphasis Panel[ZRG1 CVRS-G (03)],2,0.0,0,0,0,0,0,0,1,1,0
+Special Emphasis Panel[ZRG1-OBT-X(02)M],2,0.0,0,0,0,0,0,0,0,2,0
+Special Emphasis Panel[ZRG1-DKUS-P(04)],2,0.0,0,0,0,0,0,0,0,2,0
+Special Emphasis Panel[ZRG1 OTC-M (08)],2,0.0,0,0,0,0,0,0,0,2,0
+Special Emphasis Panel[ZRG1 AIDC-Q (83)],2,0.0,0,0,0,0,0,0,0,2,0
+Special Emphasis Panel[ZRG1-SEIR-B(80)],2,0.0,0,0,0,0,0,0,1,1,0
+Special Emphasis Panel[ZRG1-VH-A(02)M],2,0.0,0,0,0,0,0,0,1,1,0
+Special Emphasis Panel[ZRG1 OBT-S (02)],2,0.0,0,0,0,0,0,0,0,2,0
+Special Emphasis Panel[ZRG1-NRCS-V(08)],2,0.0,0,0,0,0,0,0,1,1,0
+Special Emphasis Panel[ZRG1 AIDC-F (83)],2,0.0,0,0,0,0,0,0,0,2,0
+Special Emphasis Panel[ZRG1 EMNR-H (50)],2,0.0,0,0,0,0,0,0,0,2,0
+Special Emphasis Panel[ZRG1 SBIB-Q (57)],2,0.0,0,0,0,0,0,0,0,2,0
+ZCA1-RTRB-U(M1),2,0.0,0,0,0,0,0,0,0,2,0
+ZCA1-SRB-A(J1)R,2,0.0,0,0,0,0,0,0,0,2,0
+Special Emphasis Panel[ZRG1 IMST-U (55)],2,0.0,0,0,0,0,0,0,0,2,0
+Special Emphasis Panel[ZRG1-IDM-M(02)M],2,0.0,0,0,0,0,0,0,1,1,0
+ZDE1-CF(08),2,0.0,0,0,0,0,0,0,0,2,0
+Biomedical Imaging Technology B Study Section[BMIT-B],2,0.0,0,0,0,0,0,0,0,2,0
+Somatosensory and Chemosensory Systems Study Section[SCS],2,0.0,0,0,0,0,0,0,0,2,0
+Special Emphasis Panel[ZRG1 IMM-C (02)],2,0.0,0,0,0,0,0,0,2,0,0
+Special Emphasis Panel[ZRG1 BDCN-J (81)],2,0.0,0,0,0,0,0,0,2,0,0
+Special Emphasis Panel[ZRG1 IIDB-V (91)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-HDM-N(02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 HSS-W (02)],1,0.0,0,0,0,0,0,0,0,0,1
+"Neurological, Mental and Behavioral Health Study Section[NMBH]",1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-EMNR-J(02)M],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 CVRS-B (03)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 CVRS-H (03)],1,0.0,0,0,0,0,0,0,0,0,1
+Analytics and Statistics for Population Research Panel A Study Section[ASPA],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-DKUS-A(03)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-IDIB-E(57)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 EMS-L (02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 IVBH-D (02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-IDIA-B(02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZAI1 LK-A (S2)],1,0.0,0,0,0,0,0,0,0,0,1
+ZMD1-KNL(J1),1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 SBIB-C (03)],1,0.0,0,0,0,0,0,0,0,0,1
+Cancer and Hematologic Disorders Study Section[CHD],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-IDIA-L(02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 NV-Q (02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 BTC-W (80)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-IDIA-D(90)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-BST-J(02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZMH1 ERB-S (02)],1,0.0,0,0,0,0,0,0,0,0,1
+ZDA1-GXM-A(10)R,1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 EMS-K (02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZAA1 CC (04)],1,0.0,0,0,0,0,0,0,0,0,1
+ZAA1-DD(03),1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-HDM-E(07)R],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 DKUS-B (03)],1,0.0,0,0,0,0,0,0,0,0,1
+Analytics and Statistics for Population Research Panel B Study Section[ASPB],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-IDIB-S(02)],1,0.0,0,0,0,0,0,0,0,0,1
+ZLM1-LT-C(01),1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZDK1 GRB-T (O2)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 OBT-Y (02)],1,0.0,0,0,0,0,0,0,0,0,1
+ZAG1-ZIJ-5(J1),1,0.0,0,0,0,0,0,0,0,0,1
+Molecular and Cellular Biology of Virus Infection Study Section[MCV],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 BBBT-V (81)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 MCST-J (02)],1,0.0,0,0,0,0,0,0,0,0,1
+ZCA1-RPRB-6(M)2,1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-CVRS-B(02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 KUDS-Y (05)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-OBT-M(02)M],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 CTH-R (56)],1,0.0,0,0,0,0,0,0,0,0,1
+Drug and Biologic Disposition and Toxicity Study Section[DBDT],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 AN-T (90)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 BDCN-Q (55)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-OBT-H(02)M],1,0.0,0,0,0,0,0,0,0,0,1
+ZEB1-OSR-H(O2)R,1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 CDB-M (02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 IMST-Q (02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 KUDS-A (04)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZHD1 DSR-L (50)],1,0.0,0,0,0,0,0,0,0,0,1
+ZES1-LWJ-S(IR),1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZMH1 ERB-G (03)],1,0.0,0,0,0,0,0,0,0,0,1
+Molecular Cancer Diagnosis and Classification Study Section[MCDC],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 IMST-U (02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-OBT-Y(56)R],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-PSE-C(02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 TIR-W (01)],1,0.0,0,0,0,0,0,0,0,0,1
+Pathophysiological Basis of Mental Disorders and Addictions Study Section[PMDA],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 IDIB-K (57)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 ISB-C (03)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 AN-Z (55)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 BTC-W (02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 MDCN-B (56)],1,0.0,0,0,0,0,0,0,0,0,1
+Neurogenesis and Cell Fate Study Section[NCF-M],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 DKUS-H (03)],1,0.0,0,0,0,0,0,0,0,0,1
+Molecular Neurogenetics Study Section[MNG],1,0.0,0,0,0,0,0,0,0,0,1
+"Synapses, Cytoskeleton and Trafficking Study Section[SYN]",1,0.0,0,0,0,0,0,0,0,0,1
+"Clinical, Treatment and Health Services Research Study Section[AA-3]",1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 EMS-H (55)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 CTH-B (55)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 BTC-Q (80)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-IDIA-R(02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-IDIA-C(02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 ISB-J (03)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-OTC1-E(02)M],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1-MOSS-K(02)M],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 BBBT-M (82)],1,0.0,0,0,0,0,0,0,0,0,1
+"Etiology, Diagnostic, Intervention and Treatment of Infectious Diseases Study Section[EDIT]",1,0.0,0,0,0,0,0,0,0,0,1
+"Reproductive, Perinatal and Pediatric Health Study Section[RPPH]",1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZDK1 GRB-Q (O1)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 EMNR-C (02)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZHD1 DSR-H (55)],1,0.0,0,0,0,0,0,0,0,0,1
+ZHD1(53),1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 IIDB-K (57)],1,0.0,0,0,0,0,0,0,0,0,1
+Special Emphasis Panel[ZRG1 HDM-N (02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 CVRS-A (05)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 EMNR-J (02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 EMNR-F (50)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 DKUS-A (03)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 IDIB-E (57)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1(03)-S],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 IDIA-B (02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZMD1 KNL (J1)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1(03)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-MDCN-L(03)M],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-IMM-T(57)R],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 IDIA-L (02)],1,0.0,0,0,0,0,0,0,0,1,0
+ZCA1-RPRB-M(M9),1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-CVRS-K(02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1(01)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-MOSS-C(02)M],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 BST-J (02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 IDIA-D (90)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZDA1 GXM-A (10)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-CADO-A(07)S],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1(05)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-DKUS-M(05)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-AARR-Q(51)R],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1(03)-M],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-BDCN-K(02)S],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 HDM-E (07)],1,0.0,0,0,0,0,0,0,0,1,0
+"Biobehavioral Regulation, Learning and Ethology Study Section[BRLE]",1,0.0,0,0,0,0,0,0,0,1,0
+AIDS Discovery and Development of Therapeutics Study Section[ADDT],1,0.0,0,0,0,0,0,0,0,1,0
+ZHL1-CSR-K(O1),1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-BDCN-N(50)R],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 IDIB-S (02)],1,0.0,0,0,0,0,0,0,0,1,0
+ZCA1-SRB-5(J2)R,1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZAG1 (J1)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZLM1 LT-C (01)],1,0.0,0,0,0,0,0,0,0,1,0
+ZDE1-GZ(20),1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-IDM-X(02)M],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-BCMB-N(02)M],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 CVRS-B (02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZCA1 TCRB-J (J1)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-MOSS-R(03)M],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 OBT-M (02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZCA1 RPRB-6 (M2)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1(02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZES1 LWJ-S (IR)],1,0.0,0,0,0,0,0,0,0,1,0
+Arthritis and Musculoskeletal and Skin Diseases Clinical Trials Study Section [AMSC],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZEB1 OSR-H (O2)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-IDM-Y(02)M],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-SBIB-Z(03)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-SBIB-Q(58)R],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 BST-F (55)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 CVRS-C (02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-IMST-L(55)R],1,0.0,0,0,0,0,0,0,0,1,0
+ZCA1-SRB-5(M1),1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-IDIB-S(07)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 OBT-H (02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 OBT-Y (56)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 PSE-C (02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 OBT-D (02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-DKUS-B(03)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-IMM-T(90)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 BDCN-E (02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-MOSS-K(57)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 DKUS-R (04)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-OBT-R(02)M],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-MOSS-K(57)S],1,0.0,0,0,0,0,0,0,0,1,0
+ZAG1(A1),1,0.0,0,0,0,0,0,0,0,1,0
+"Clinical, Integrative and Molecular Gastroenterology Study Section[CIMG]",1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-IDM-N(02)M],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 IDIA-R (02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-BDCN-R(02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 DKUS-H (04)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 IDIA-C (02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 MOSS-K (02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 OTC1-E (02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-BDCN-Q(90)S],1,0.0,0,0,0,0,0,0,0,1,0
+ZAR1-XZ(M1),1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-IFCN-T(02)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-SBIB-Q(57)],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-BDCN-W(91)S],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-OTC-K(04)M],1,0.0,0,0,0,0,0,0,0,1,0
+ZDK1(M4)-S,1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1-AARR-E(03)M],1,0.0,0,0,0,0,0,0,0,1,0
+Special Emphasis Panel[ZRG1 BST-V (02)],1,0.0,0,0,0,0,0,0,1,0,0
+AIDS Clinical Studies and Epidemiology Study Section[ACE],1,0.0,0,0,0,0,0,0,1,0,0
+ZLM1-YW-N(01),1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1-PSE-V(59)R],1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1-VH-N(02)],1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1-GGG-L(03)M],1,0.0,0,0,0,0,0,0,1,0,0
+ZCA1(J1),1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1 GGG-X (02)],1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1-SBIB-Z(03)M],1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1-MOSS-C(02)S],1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1 IMST-D (02)],1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1 BBBP-S (55)],1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1 MDCN-G (05)],1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1-IFCN-T(51)S],1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1 BCMB-D (02)],1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1 OTC-N (55)],1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1 SEIR-A (80)],1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1-AARR-M(11)S],1,0.0,0,0,0,0,0,0,1,0,0
+ZHL1-CSR-H(O3),1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1-CB-A(55)R],1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1 VH-D (02)],1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1-BDCN-W(06)M],1,0.0,0,0,0,0,0,0,1,0,0
+Special Emphasis Panel[ZRG1 SEIR-S (80)],1,0.0,0,0,0,0,0,0,1,0,0

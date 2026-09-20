@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GrantScape &mdash; NIH funding landscape for grant strategy</title>
+<style>
+  :root{
+    --bg:#ffffff; --ink:#1a2230; --muted:#5b6577; --line:#e2e6ec; --band:#f6f8fb;
+    --navy:#1f3864; --blue:#2e5496; --rise:#1a7f5a; --fall:#b0413e; --chip:#eef2f8;
+    box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+    --bg:#0f141b; --ink:#e6eaf0; --muted:#9aa6b6; --line:#26303d; --band:#151c25;
+    --navy:#9fc0ff; --blue:#7ea6e8; --chip:#1a2330;
+  }}
+  *{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:1060px;margin:0 auto;padding:22px 18px 70px;}
+  h1{font-size:24px;color:var(--navy);margin:0;}
+  h1 .tm{font-size:13px;color:var(--muted);font-weight:400;}
+  .sub{color:var(--muted);font-size:13px;margin:2px 0 16px;}
+  a{color:var(--blue);}
+  .tabs{display:flex;gap:6px;border-bottom:2px solid var(--line);margin-bottom:16px;flex-wrap:wrap;}
+  .tab{padding:8px 14px;border:none;background:none;color:var(--muted);font:inherit;font-weight:600;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;}
+  .tab.active{color:var(--navy);border-bottom-color:var(--blue);}
+  .panel{display:none;} .panel.active{display:block;}
+  .card{border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:var(--band);margin-bottom:14px;}
+  .row{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end;}
+  label{font-size:13px;color:var(--muted);}
+  select,input[type=search]{font:inherit;padding:6px 9px;border:1px solid var(--line);border-radius:7px;background:var(--bg);color:var(--ink);}
+  input[type=search]{min-width:200px;}
+  button.b{font:inherit;padding:6px 12px;border:1px solid var(--line);border-radius:7px;background:var(--chip);color:var(--ink);cursor:pointer;}
+  input[type=file]{font-size:13px;}
+  .note{font-size:12px;color:var(--muted);margin-top:8px;}
+  table{width:100%;border-collapse:collapse;margin-top:6px;font-size:13.5px;}
+  th,td{text-align:right;padding:7px 9px;border-bottom:1px solid var(--line);white-space:nowrap;}
+  th:first-child,td:first-child{text-align:left;white-space:normal;}
+  th{color:#fff;background:var(--navy);cursor:pointer;position:sticky;top:0;user-select:none;font-weight:600;}
+  th.s:hover{background:var(--blue);}
+  tbody tr:nth-child(even){background:var(--band);}
+  tbody tr.sel{outline:2px solid var(--blue);outline-offset:-2px;}
+  tbody tr{cursor:pointer;}
+  .rise{color:var(--rise);font-weight:600;} .fall{color:var(--fall);}
+  .kpis{display:flex;gap:12px;flex-wrap:wrap;margin:8px 0 0;}
+  .kpi{flex:1 1 150px;border:1px solid var(--line);border-radius:9px;padding:10px 12px;background:var(--bg);}
+  .kpi b{display:block;font-size:18px;color:var(--navy);} .kpi span{font-size:12px;color:var(--muted);}
+  .tablewrap{max-height:520px;overflow:auto;border:1px solid var(--line);border-radius:9px;}
+  svg{max-width:100%;}
+  .hint{font-size:12.5px;color:var(--muted);background:var(--band);border-left:3px solid var(--blue);padding:8px 12px;border-radius:0 7px 7px 0;margin:0 0 12px;}
+  .foot{font-size:11.5px;color:var(--muted);margin-top:26px;border-top:1px solid var(--line);padding-top:12px;}
+  .demo{background:var(--chip);border:1px dashed var(--blue);color:var(--blue);}
+  .badge{display:inline-block;font-size:11px;background:#c9a227;color:#111;border-radius:4px;padding:1px 6px;margin-left:8px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>GrantScape <span class="tm">&mdash; the NIH funding landscape for grant strategy</span></h1>
+  <p class="sub">Three views of where NIH funds, where the money is moving, and where your science is reviewed &mdash; built from public NIH data. Nothing is uploaded; all computation runs in your browser.</p>
+  <div style="margin-bottom:12px"><button class="b demo" id="demoBtn">Load synthetic demo data (all tabs)</button> <span id="demoNote" class="note"></span></div>
+
+  <div class="tabs">
+    <button class="tab active" data-p="map">Funding Map</button>
+    <button class="tab" data-p="concept">Concept Landscape</button>
+    <button class="tab" data-p="odds">Institute Odds</button>
+  </div>
+
+  <!-- ============ TAB 1: FUNDING MAP ============ -->
+  <div class="panel active" id="map">
+    <p class="hint">What NIH funds by research category, and which areas are rising. Load the official <b>RCDC categorical-spending</b> table (CSV) from
+      <a href="https://report.nih.gov/funding/categorical-spending" target="_blank" rel="noopener">report.nih.gov</a>.</p>
+    <div class="card">
+      <div class="row">
+        <div><label>RCDC CSV</label><br><input id="mapFile" type="file" accept=".csv,.txt"></div>
+        <div><label>From FY</label><br><select id="y0"></select></div>
+        <div><label>To FY</label><br><select id="y1"></select></div>
+        <div><label>Momentum</label><br><select id="metric">
+          <option value="rel">Relative to portfolio</option>
+          <option value="cagr">Absolute $ growth</option></select></div>
+        <div style="flex:1 1 200px"><label>Search</label><br><input id="q" type="search" placeholder="e.g. stem cell, immunotherapy"></div>
+      </div>
+      <div class="kpis" id="mapKpis"></div>
+      <p class="note">&ldquo;Relative to portfolio&rdquo; subtracts the median category growth, isolating fields rising faster than NIH overall (removing the macro-budget trend). Click a category for its funding trajectory.</p>
+    </div>
+    <div class="card" id="chartWrap" style="display:none">
+      <div id="chartTitle" style="font-weight:600;color:var(--navy);margin-bottom:6px"></div><div id="chart"></div>
+    </div>
+    <div class="tablewrap"><table id="mapTbl"><thead><tr>
+      <th class="s" data-k="name">Category</th><th class="s" data-k="latest">Latest ($M)</th>
+      <th class="s" data-k="share">Share (%)</th><th class="s" data-k="cagr">$ growth (%/yr)</th>
+      <th class="s" data-k="rel">Rel. (pp/yr)</th></tr></thead><tbody id="mapBody"></tbody></table></div>
+    <p class="note" id="mapNote"></p>
+  </div>
+
+  <!-- ============ TAB 2: CONCEPT LANDSCAPE ============ -->
+  <div class="panel" id="concept">
+    <p class="hint">For a research concept (abstract keywords), which <b>institutes</b> and <b>study sections</b> fund it &mdash; from <code>pull_concept_landscape.py</code> output. RePORTER contains funded projects only, so these are &ldquo;where funded work lands,&rdquo; not success rates.</p>
+    <div class="card"><div class="row">
+      <div><label>Institutes CSV (…_by_ic.csv)</label><br><input id="cicFile" type="file" accept=".csv"></div>
+      <div><label>Study sections CSV (…_by_studysection.csv)</label><br><input id="cssFile" type="file" accept=".csv"></div>
+    </div><p class="note" id="conceptNote"></p></div>
+    <h3 style="color:var(--blue);margin:8px 0 2px;font-size:16px">Institutes funding this concept</h3>
+    <div class="tablewrap"><table id="cicTbl"></table></div>
+    <h3 style="color:var(--blue);margin:16px 0 2px;font-size:16px">Study sections reviewing this concept</h3>
+    <div class="tablewrap"><table id="cssTbl"></table></div>
+  </div>
+
+  <!-- ============ TAB 3: INSTITUTE ODDS ============ -->
+  <div class="panel" id="odds">
+    <p class="hint">Success rate and funding by <b>Institute/Center</b> &mdash; load the NIH <b>Success Rates by IC</b> table (a tidy CSV with institute, success rate, and optionally activity code / fiscal year / funding). If the Concept Landscape institutes are loaded, odds are shown beside them.</p>
+    <div class="card"><div class="row">
+      <div><label>Success-rates CSV</label><br><input id="oddsFile" type="file" accept=".csv"></div>
+      <div id="oddsFilters"></div>
+      <div style="flex:1 1 160px"><label>Search IC</label><br><input id="oq" type="search" placeholder="e.g. NCI, NHLBI"></div>
+    </div><p class="note" id="oddsNote"></p></div>
+    <div class="tablewrap"><table id="oddsTbl"></table></div>
+  </div>
+
+  <p class="foot">
+    GrantScape &bull; public-domain NIH data (report.nih.gov, RePORTER, NIH Data Book). Not affiliated with or endorsed by NIH. RCDC categories overlap and NIH does not budget by category; success rates by IC are administrative and not topic-specific; study-section success rates are not published. Descriptive tool intended to inform, not determine, submission strategy. MIT License.
+  </p>
+</div>
+
+<script>
+"use strict";
+// ---------------- shared CSV + helpers ----------------
+function parseCSV(t){const R=[];let f="",r=[],q=false;for(let i=0;i<t.length;i++){const c=t[i];
+  if(q){if(c==='"'){if(t[i+1]==='"'){f+='"';i++;}else q=false;}else f+=c;}
+  else{if(c==='"')q=true;else if(c===',' ){r.push(f);f="";}else if(c==='\n'){r.push(f);R.push(r);r=[];f="";}else if(c==='\r'){}else f+=c;}}
+  if(f.length||r.length){r.push(f);R.push(r);}return R.filter(x=>x.some(v=>v!==""));}
+const numv=s=>{if(s==null)return NaN;const v=parseFloat(String(s).replace(/[$,%\s]/g,""));return isNaN(v)?NaN:v;};
+const esc=s=>String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const BURDEN=/mortalit|prevalence|death|cases|burden|\/\s*100|per\s*100|rate|arra/i;
+const yearOf=h=>{if(BURDEN.test(String(h)))return null;const m=String(h).match(/(20\d{2})/);return m?+m[1]:null;};
+function toObjs(rows){ // rows[0]=header -> array of {col:val}
+  const h=rows[0].map(x=>x.trim()); return rows.slice(1).map(r=>{const o={};h.forEach((k,i)=>o[k]=r[i]);return o;});}
+
+// tab switching
+document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{
+  document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));
+  document.querySelectorAll(".panel").forEach(x=>x.classList.remove("active"));
+  t.classList.add("active"); document.getElementById(t.dataset.p).classList.add("active");
+}));
+
+// ================= TAB 1 FUNDING MAP =================
+let RCDC=null,sortK="rel",sortDir=-1,selName=null;
+document.getElementById("mapFile").addEventListener("change",e=>readFile(e,ingestRCDC));
+function readFile(e,cb){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{cb(r.result);}catch(err){alert("Parse error: "+err.message);}};r.readAsText(f);}
+function ingestRCDC(text){
+  const rows=parseCSV(text); if(rows.length<2)throw new Error("empty");
+  let hi=0,best=-1;for(let i=0;i<Math.min(rows.length,15);i++){const c=rows[i].filter(h=>yearOf(h)!=null).length;if(c>best){best=c;hi=i;}}
+  const header=rows[hi],yearCols=[];header.forEach((h,idx)=>{const y=yearOf(h);if(y&&y>=2000&&y<=2100)yearCols.push({idx,year:y});});
+  if(yearCols.length<2)throw new Error("no fiscal-year columns");
+  let catIdx=0;for(let idx=0;idx<header.length;idx++){if(!yearCols.some(y=>y.idx===idx)){catIdx=idx;break;}}
+  const years=[...new Set(yearCols.map(y=>y.year))].sort((a,b)=>a-b),cats=[];
+  for(let i=hi+1;i<rows.length;i++){const r=rows[i],name=(r[catIdx]||"").trim();if(!name)continue;const v={};let any=false;
+    yearCols.forEach(({idx,year})=>{const x=numv(r[idx]);if(!isNaN(x)){v[year]=x;any=true;}});if(any)cats.push({name,vals:v});}
+  if(!cats.length)throw new Error("no numeric rows");
+  // auto-detect scale: values already in $millions (report.nih.gov table) vs raw dollars
+  let mx=0;cats.forEach(c=>Object.values(c.vals).forEach(v=>{if(v>mx)mx=v;}));
+  RCDC={years,cats,toM:mx<1e6?1:1e-6};setupMap();
+}
+function setupMap(){
+  const y0=document.getElementById("y0"),y1=document.getElementById("y1");y0.innerHTML=y1.innerHTML="";
+  RCDC.years.forEach(y=>{y0.add(new Option(y,y));y1.add(new Option(y,y));});
+  y0.value=RCDC.years[Math.max(0,RCDC.years.length-6)];y1.value=RCDC.years[RCDC.years.length-1];
+  ["y0","y1","metric","q"].forEach(id=>document.getElementById(id).oninput=renderMap);
+  document.querySelectorAll("#mapTbl th.s").forEach(th=>th.onclick=()=>{const k=th.dataset.k;if(sortK===k)sortDir*=-1;else{sortK=k;sortDir=k==="name"?1:-1;}renderMap();});
+  renderMap();
+}
+function computeMap(){
+  const lo=Math.min(+y0.value,+y1.value),hi=Math.max(+y0.value,+y1.value),span=Math.max(hi-lo,1);
+  const tot=RCDC.cats.reduce((s,c)=>s+(c.vals[hi]||0),0)||1;
+  const rows=RCDC.cats.map(c=>{const v0=c.vals[lo],v1=c.vals[hi];let cagr=NaN;if(v0>0&&v1>0)cagr=(Math.pow(v1/v0,1/span)-1)*100;
+    return{name:c.name,latest:(v1||0)*RCDC.toM,share:100*(v1||0)/tot,cagr,rel:NaN,_c:c};});
+  const valid=rows.map(r=>r.cagr).filter(x=>!isNaN(x)).sort((a,b)=>a-b),med=valid.length?valid[Math.floor(valid.length/2)]:0;
+  rows.forEach(r=>r.rel=isNaN(r.cagr)?NaN:r.cagr-med);return{rows,med,lo,hi};
+}
+function renderMap(){
+  const {rows,med,lo,hi}=computeMap(),q=document.getElementById("q").value.trim().toLowerCase();
+  let view=rows.filter(r=>!q||r.name.toLowerCase().includes(q));
+  view.sort((a,b)=>{let av=a[sortK],bv=b[sortK];if(sortK==="name")return sortDir*av.localeCompare(bv);if(isNaN(av))av=-1e9;if(isNaN(bv))bv=-1e9;return sortDir*(av-bv);});
+  const byRel=[...rows].filter(r=>!isNaN(r.rel)).sort((a,b)=>b.rel-a.rel),byL=[...rows].sort((a,b)=>b.latest-a.latest);
+  document.getElementById("mapKpis").innerHTML=
+    kpi(byL[0]?byL[0].name:"—","Largest category, FY"+hi)+kpi("$"+(byL[0]?byL[0].latest.toFixed(0):"0")+"M","Its funding")+
+    kpi(byRel.slice(0,3).map(r=>r.name).join(", ")||"—","Fastest-rising vs portfolio")+
+    kpi(byRel.slice(-3).reverse().map(r=>r.name).join(", ")||"—","Fastest-declining");
+  const tb=document.getElementById("mapBody");tb.innerHTML="";
+  view.forEach(r=>{const tr=document.createElement("tr");if(r.name===selName)tr.className="sel";
+    tr.innerHTML="<td>"+esc(r.name)+"</td><td>"+(r.latest?r.latest.toFixed(0):"—")+"</td><td>"+(r.share?r.share.toFixed(2):"—")+"</td><td>"+pc(r.cagr)+"</td><td class='"+(r.rel>0?'rise':r.rel<0?'fall':'')+"'>"+pp(r.rel)+"</td>";
+    tr.onclick=()=>{selName=r.name;drawChart(r._c);renderMap();};tb.appendChild(tr);});
+  document.getElementById("mapNote").textContent="Window FY"+lo+"–"+hi+". Median category growth "+med.toFixed(1)+"%/yr (portfolio baseline). "+view.length+" categories.";
+  if(selName){const c=RCDC.cats.find(x=>x.name===selName);if(c)drawChart(c);}
+}
+const kpi=(b,s)=>"<div class='kpi'><b>"+esc(b)+"</b><span>"+esc(s)+"</span></div>";
+const pc=x=>isNaN(x)?"—":(x>0?"+":"")+x.toFixed(1)+"%",pp=x=>isNaN(x)?"—":(x>0?"+":"")+x.toFixed(1)+" pp";
+function drawChart(c){const w=document.getElementById("chartWrap");w.style.display="block";
+  document.getElementById("chartTitle").textContent=c.name+" — funding by fiscal year";
+  const pts=RCDC.years.map(y=>({y,v:c.vals[y]})).filter(p=>p.v!=null&&!isNaN(p.v));
+  const W=680,H=230,mL=64,mR=16,mT=14,mB=28;if(pts.length<2){document.getElementById("chart").innerHTML="<p class='note'>Insufficient data.</p>";return;}
+  const xs=pts.map(p=>p.y),vs=pts.map(p=>p.v),xmin=Math.min(...xs),xmax=Math.max(...xs),vmax=Math.max(...vs),vmin=Math.min(0,...vs);
+  const X=x=>mL+(x-xmin)/(xmax-xmin||1)*(W-mL-mR),Y=v=>H-mB-(v-vmin)/(vmax-vmin||1)*(H-mT-mB);
+  let g="";[vmin,(vmin+vmax)/2,vmax].forEach(t=>{g+="<line x1='"+mL+"' y1='"+Y(t)+"' x2='"+(W-mR)+"' y2='"+Y(t)+"' stroke='var(--line)'/><text x='"+(mL-8)+"' y='"+(Y(t)+4)+"' text-anchor='end' font-size='11' fill='var(--muted)'>$"+(t*RCDC.toM).toFixed(0)+"M</text>";});
+  xs.forEach((x,i)=>{if(i%Math.ceil(xs.length/8)===0||i===xs.length-1)g+="<text x='"+X(x)+"' y='"+(H-8)+"' text-anchor='middle' font-size='11' fill='var(--muted)'>"+x+"</text>";});
+  const path=pts.map((p,i)=>(i?"L":"M")+X(p.y).toFixed(1)+" "+Y(p.v).toFixed(1)).join(" ");
+  const dots=pts.map(p=>"<circle cx='"+X(p.y)+"' cy='"+Y(p.v)+"' r='2.6' fill='var(--blue)'/>").join("");
+  document.getElementById("chart").innerHTML="<svg viewBox='0 0 "+W+" "+H+"' width='100%'>"+g+"<path d='"+path+"' fill='none' stroke='var(--blue)' stroke-width='2.2'/>"+dots+"</svg>";
+}
+
+// ================= TAB 2 CONCEPT LANDSCAPE =================
+let CIC=null,CSS=null;
+document.getElementById("cicFile").addEventListener("change",e=>readFile(e,t=>{CIC=toObjs(parseCSV(t));renderConcept();}));
+document.getElementById("cssFile").addEventListener("change",e=>readFile(e,t=>{CSS=toObjs(parseCSV(t));renderConcept();}));
+function simpleTable(el,objs,firstCols){
+  if(!objs||!objs.length){el.innerHTML="";return;}
+  const cols=Object.keys(objs[0]);
+  const ordered=firstCols.filter(c=>cols.includes(c)).concat(cols.filter(c=>!firstCols.includes(c)));
+  let h="<thead><tr>"+ordered.map(c=>"<th>"+esc(c)+"</th>").join("")+"</tr></thead><tbody>";
+  objs.slice(0,200).forEach(o=>{h+="<tr>"+ordered.map(c=>"<td>"+esc(o[c]??"")+"</td>").join("")+"</tr>";});
+  el.innerHTML=h+"</tbody>";
+}
+function renderConcept(){
+  simpleTable(document.getElementById("cicTbl"),CIC,["institute","n_projects","pct_of_matched"]);
+  simpleTable(document.getElementById("cssTbl"),CSS,["study_section","n_projects","pct_of_matched"]);
+  document.getElementById("conceptNote").textContent=(CIC?CIC.length+" institutes ":"")+(CSS?"· "+CSS.length+" study sections":"")||"Load the puller output CSV(s).";
+  renderOdds(); // refresh odds join
+}
+
+// ================= TAB 3 INSTITUTE ODDS =================
+let ODDS=null,oddsCols={};
+document.getElementById("oddsFile").addEventListener("change",e=>readFile(e,t=>{ODDS=toObjs(parseCSV(t));detectOdds();renderOdds();}));
+function detectOdds(){
+  if(!ODDS||!ODDS.length)return;const cols=Object.keys(ODDS[0]);
+  oddsCols.ic=cols.find(c=>/institute|^ic$|center|abbrev/i.test(c))||cols[0];
+  oddsCols.sr=cols.find(c=>/success/i.test(c));
+  oddsCols.act=cols.find(c=>/activity|mechanism|code/i.test(c));
+  oddsCols.fy=cols.find(c=>/fiscal|year|^fy/i.test(c));
+  // build filters (activity + fiscal year)
+  const box=document.getElementById("oddsFilters");box.innerHTML="";
+  let html="";
+  if(oddsCols.act){const vals=[...new Set(ODDS.map(o=>o[oddsCols.act]).filter(Boolean))];
+    html+="<label>Activity</label><br><select id='oact'><option value=''>All</option>"+vals.map(v=>"<option>"+esc(v)+"</option>").join("")+"</select> ";}
+  if(oddsCols.fy){const yrs=[...new Set(ODDS.map(o=>o[oddsCols.fy]).filter(Boolean))].sort();const last=yrs[yrs.length-1];
+    html+="<label>Fiscal year</label><br><select id='ofy'><option value=''>All</option>"+yrs.map(v=>"<option "+(v===last?"selected":"")+">"+esc(v)+"</option>").join("")+"</select>";}
+  box.innerHTML=html;
+  if(document.getElementById("oact"))document.getElementById("oact").oninput=renderOdds;
+  if(document.getElementById("ofy"))document.getElementById("ofy").oninput=renderOdds;
+  document.getElementById("oq").oninput=renderOdds;
+}
+function renderOdds(){
+  const el=document.getElementById("oddsTbl");
+  if(!ODDS){el.innerHTML="";document.getElementById("oddsNote").textContent="Load a success-rates CSV.";return;}
+  const q=(document.getElementById("oq").value||"").trim().toLowerCase();
+  const act=document.getElementById("oact")?document.getElementById("oact").value:"";
+  const fy=document.getElementById("ofy")?document.getElementById("ofy").value:"";
+  let rows=ODDS.filter(o=>(!act||o[oddsCols.act]===act)&&(!fy||String(o[oddsCols.fy])===fy)&&(!q||String(o[oddsCols.ic]).toLowerCase().includes(q)));
+  if(oddsCols.sr)rows=rows.slice().sort((a,b)=>numv(b[oddsCols.sr])-numv(a[oddsCols.sr]));
+  const cols=Object.keys(ODDS[0]);
+  const order=[oddsCols.ic,oddsCols.sr,oddsCols.act,oddsCols.fy].filter(Boolean).concat(cols.filter(c=>![oddsCols.ic,oddsCols.sr,oddsCols.act,oddsCols.fy].includes(c)));
+  let h="<thead><tr>"+order.map(c=>"<th>"+esc(c)+"</th>").join("")+"</tr></thead><tbody>";
+  rows.slice(0,300).forEach(o=>{h+="<tr>"+order.map(c=>"<td>"+esc(o[c]??"")+"</td>").join("")+"</tr>";});
+  el.innerHTML=h+"</tbody>";
+  // concept join: if concept ICs loaded, note overlap
+  let jn="";
+  if(CIC&&oddsCols.sr){
+    const map={};rows.forEach(o=>{map[String(o[oddsCols.ic]).toUpperCase()]=o[oddsCols.sr];});
+    const hits=CIC.filter(c=>map[String(c.institute||c[Object.keys(c)[0]]).toUpperCase()]!=null).length;
+    jn=" · "+hits+" of your concept's institutes have a success rate here (approximate, IC-level).";
+  }
+  document.getElementById("oddsNote").textContent=rows.length+" rows"+jn;
+}
+
+// ================= SYNTHETIC DEMO =================
+document.getElementById("demoBtn").addEventListener("click",()=>{
+  // RCDC-like: categories x years (SYNTHETIC)
+  const yrs=[2015,2016,2017,2018,2019,2020,2021,2022,2023];
+  const seed=[["Stem Cell Research",1.2,0.11],["Genetics",7.0,0.05],["Regenerative Medicine",0.9,0.14],
+    ["Cancer",6.4,0.04],["Immunotherapy",0.6,0.19],["Health Services",8.0,0.005],["Cardiovascular",2.3,0.03],
+    ["Bioengineering",0.7,0.10],["Neurosciences",8.6,0.045],["Aging",3.4,0.06],["Digestive Diseases",1.9,0.02]];
+  const cats=seed.map(([n,base,g])=>{const v={};yrs.forEach((y,i)=>v[y]=Math.round(base*1e9*Math.pow(1+g,i)));return{name:n,vals:v};});
+  RCDC={years:yrs,cats,toM:1e-6};setupMap();
+  CIC=[{institute:"NCI",n_projects:"120",pct_of_matched:"31"},{institute:"NHLBI",n_projects:"64",pct_of_matched:"17"},
+    {institute:"NIGMS",n_projects:"48",pct_of_matched:"12"},{institute:"NIAID",n_projects:"40",pct_of_matched:"10"},
+    {institute:"NIDDK",n_projects:"33",pct_of_matched:"9"}];
+  CSS=[{study_section:"Cancer Molecular Pathobiology",n_projects:"38",pct_of_matched:"10"},
+    {study_section:"Cellular & Molecular Immunology",n_projects:"31",pct_of_matched:"8"},
+    {study_section:"Surgery, Anesthesiology and Trauma",n_projects:"22",pct_of_matched:"6"}];
+  renderConcept();
+  ODDS=[{institute:"NIGMS",activity_code:"R01",fiscal_year:"2022",success_rate:"31.2"},
+    {institute:"NCI",activity_code:"R01",fiscal_year:"2022",success_rate:"12.5"},
+    {institute:"NHLBI",activity_code:"R01",fiscal_year:"2022",success_rate:"18.9"},
+    {institute:"NIAID",activity_code:"R01",fiscal_year:"2022",success_rate:"20.4"},
+    {institute:"NIDDK",activity_code:"R01",fiscal_year:"2022",success_rate:"17.1"}];
+  detectOdds();renderOdds();
+  document.getElementById("demoNote").innerHTML="<span class='badge'>SYNTHETIC</span> Illustrative data only — replace with official downloads (see README).";
+});
+</script>
+</body>
+</html>
