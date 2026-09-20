@@ -8,9 +8,9 @@ abstract: >-
   which institutes and study sections fund a given research area.
 type: software
 authors:
-  - given-names: "[First]"
-    family-names: "[Last]"
-    affiliation: "[Institution]"
+  - given-names: "Paul"
+    family-names: "Kuo"
+    affiliation: "Onetomap"
 version: "1.0.0"
 date-released: "2026-09-20"
 license: MIT
