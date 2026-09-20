@@ -72,7 +72,7 @@
       <a href="https://report.nih.gov/funding/categorical-spending" target="_blank" rel="noopener">report.nih.gov</a>.</p>
     <div class="card">
       <div class="row">
-        <div><label>RCDC CSV</label><br><input id="mapFile" type="file" accept=".csv,.txt"></div>
+        <div><label id="mapFileLbl">Loaded: bundled RCDC (FY2008–2025) — or choose a newer file</label><br><input id="mapFile" type="file" accept=".csv,.txt"></div>
         <div><label>From FY</label><br><select id="y0"></select></div>
         <div><label>To FY</label><br><select id="y1"></select></div>
         <div><label>Momentum</label><br><select id="metric">
@@ -102,8 +102,8 @@
     <p class="hint">For a research concept (abstract keywords), which <b>institutes</b> and <b>study sections</b> fund it &mdash; from <code>pull_concept_landscape.py</code> output. RePORTER contains funded projects only, so these are &ldquo;where funded work lands,&rdquo; not success rates.</p>
     <div class="card"><div class="row">
       <div><label>Bundled concept</label><br><select id="conceptSel"><option value="transplant">Transplantation</option><option value="regenmed">Regenerative medicine</option></select></div>
-      <div><label>Institutes CSV (…_by_ic.csv)</label><br><input id="cicFile" type="file" accept=".csv"></div>
-      <div><label>Study sections CSV (…_by_studysection.csv)</label><br><input id="cssFile" type="file" accept=".csv"></div>
+      <div><label id="cicFileLbl">Institutes CSV — or load your own (…_by_ic.csv)</label><br><input id="cicFile" type="file" accept=".csv"></div>
+      <div><label id="cssFileLbl">Study sections CSV — or load your own (…_by_studysection.csv)</label><br><input id="cssFile" type="file" accept=".csv"></div>
     </div><p class="note" id="conceptNote"></p></div>
     <h3 style="color:var(--blue);margin:8px 0 2px;font-size:16px">Institutes funding this concept</h3>
     <div class="tablewrap"><table id="cicTbl"></table></div>
@@ -115,7 +115,7 @@
   <div class="panel" id="odds">
     <p class="hint">Success rate and funding by <b>Institute/Center</b> &mdash; load the NIH <b>Success Rates by IC</b> table (a tidy CSV with institute, success rate, and optionally activity code / fiscal year / funding). If the Concept Landscape institutes are loaded, odds are shown beside them.</p>
     <div class="card"><div class="row">
-      <div><label>Success-rates CSV</label><br><input id="oddsFile" type="file" accept=".csv"></div>
+      <div><label id="oddsFileLbl">Loaded: bundled IC success rates — or choose a newer file</label><br><input id="oddsFile" type="file" accept=".csv"></div>
       <div id="oddsFilters"></div>
       <div style="flex:1 1 160px"><label>Search IC</label><br><input id="oq" type="search" placeholder="e.g. NCI, NHLBI"></div>
     </div><p class="note" id="oddsNote"></p></div>
@@ -150,7 +150,7 @@ document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{
 
 // ================= TAB 1 FUNDING MAP =================
 let RCDC=null,sortK="rel",sortDir=-1,selName=null;
-document.getElementById("mapFile").addEventListener("change",e=>readFile(e,ingestRCDC));
+document.getElementById("mapFile").addEventListener("change",e=>{var n=e.target.files[0];if(n)document.getElementById("mapFileLbl").textContent="Loaded: "+n.name;readFile(e,ingestRCDC);});
 function readFile(e,cb){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{cb(r.result);}catch(err){alert("Parse error: "+err.message);}};r.readAsText(f);}
 function ingestRCDC(text){
   const rows=parseCSV(text); if(rows.length<2)throw new Error("empty");
@@ -236,7 +236,7 @@ function renderConcept(){
 
 // ================= TAB 3 INSTITUTE ODDS =================
 let ODDS=null,oddsCols={};
-document.getElementById("oddsFile").addEventListener("change",e=>readFile(e,t=>{ODDS=toObjs(parseCSV(t));detectOdds();renderOdds();}));
+document.getElementById("oddsFile").addEventListener("change",e=>{var n=e.target.files[0];if(n)document.getElementById("oddsFileLbl").textContent="Loaded: "+n.name;readFile(e,t=>{ODDS=toObjs(parseCSV(t));detectOdds();renderOdds();});});
 function detectOdds(){
   if(!ODDS||!ODDS.length)return;const cols=Object.keys(ODDS[0]);
   oddsCols.ic=cols.find(c=>/institute|^ic$|center|abbrev/i.test(c))||cols[0];
