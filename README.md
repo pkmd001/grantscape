@@ -3,67 +3,98 @@
 **The NIH funding landscape for grant strategy.** A single-page, dependency-free
 web app that turns public NIH data into an applicant-facing view of *what NIH
 funds*, *where the money is moving*, and *where a given line of science is
-reviewed*. Runs entirely in the browser — no server, nothing uploaded.
+reviewed*. Runs entirely in the browser — nothing is uploaded.
+
+**Live app:** https://pkmd001.github.io/grantscape/  ·  **Help/About:** [about.html](about.html)
 
 > Companion tool to *[paper title / citation to be added]*.
+
+---
 
 ## Why
 NIH publishes the pieces — category funding (RCDC), success rates (Data Book),
 and project-level review assignments (RePORTER) — but they live in separate
-public silos, and the integrated portfolio-visualization tools NIH staff use
-(PVIZ, iRePORT) are internal-only. GrantScape stitches the public pieces
-together and adds derived metrics (budget-normalized momentum; concept →
-institute/study-section mapping) that the public tools don't compute.
+public silos, and the integrated portfolio tools NIH staff use (PVIZ, iRePORT)
+are internal-only. GrantScape stitches the public pieces together and adds
+derived metrics (budget-normalized momentum; concept → institute/study-section
+mapping) that the public tools don't compute.
 
-## Three tabs
-1. **Funding Map** — load the RCDC categorical-spending CSV → funding level,
-   share, and *momentum relative to the portfolio* (growth beyond the median
-   category, removing the macro-budget trend), with per-category trend charts.
-2. **Concept Landscape** — load the output of `scripts/pull_concept_landscape.py`
-   → which **institutes** and **study sections** fund a keyword-defined area
-   (funded volume + trend; funded projects only, not success rates).
-3. **Institute Odds** — load an NIH success-rates-by-IC CSV → success rate and
-   funding by institute; if the Concept Landscape institutes are loaded, odds
-   are shown beside them (approximate, IC-level).
+## Using the three tabs
+**Funding Map** — what NIH funds by research category and which areas are rising.
+Loads the RCDC categorical-spending table. Pick a fiscal-year window; toggle
+momentum between *absolute $ growth* and *relative to portfolio* (growth beyond
+the median category, which removes the macro-budget trend); set a *minimum
+funding* floor to hide tiny-base outliers; search or click a category for its
+trend chart.
 
-## Use
-1. Open `index.html` (locally, or via GitHub Pages).
-2. A real, dated NIH snapshot is bundled: `data/rcdc_categorical_spending_FY2008-2025.csv` — load it in the Funding Map tab. (Or click **Load synthetic demo** for a quick look.) Download the current table anytime from report.nih.gov.
-3. Load your own CSVs per tab. See [`data/SOURCES.md`](data/SOURCES.md) for
-   where to download the official tables and the expected formats.
+**Concept Landscape** — for a research concept, which *institutes* and *study
+sections* fund it. Choose a bundled concept (transplantation / regenerative
+medicine) or load your own CSVs from `pull_concept_landscape.py` (or the Colab
+notebook). Shows funded-project counts and yearly trend. Note: RePORTER holds
+*funded* projects only, so these are "where funded work lands," not success rates.
 
+**Institute Odds** — success rate and funding by Institute/Center. Loads the NIH
+Data Book success-rate table; pick a fiscal year to see one row per IC, sorted
+by success rate.
 
-- **Institute Odds** tab: a real snapshot is bundled — `data/ic_success_rates_1998-2025.csv` (NIH Data Book Report 157: new Type-1 RPG success rates by IC, 1998–2025; `success_rate` = investigator-initiated/untargeted). Load it and pick a fiscal year.
+On the hosted site all three tabs **auto-load the bundled real data** on open.
+There is also a **Load synthetic demo** button (clearly labeled) for a quick look.
 
+## Data dictionary
+**`data/rcdc_categorical_spending_FY2008-2025.csv`** (Funding Map) — official RCDC
+table. First column = research/disease category; one column per fiscal year with
+funding **in $millions**; mortality/prevalence and ARRA columns are ignored
+automatically.
 
-- **Concept Landscape** tab: worked-example CSVs bundled — `data/{transplant,regenmed}_by_ic.csv` and `..._by_studysection.csv` (from `pull_concept_landscape.py`, FY2015–23, R01). Load the by_ic and by_studysection pair for a concept.
+**`data/ic_success_rates_1998-2025.csv`** (Institute Odds):
+| column | meaning |
+|---|---|
+| `institute` | NIH Institute/Center abbreviation (NCI, NHLBI, …) |
+| `fiscal_year` | fiscal year |
+| `success_rate` | new (Type 1) RPG success rate, investigator-initiated (untargeted), % |
+| `success_rate_targeted` | success rate for targeted (RFA/set-aside) applications, % |
+
+**`data/<concept>_by_ic.csv`** and **`data/<concept>_by_studysection.csv`**
+(Concept Landscape), from the puller:
+| column | meaning |
+|---|---|
+| `institute` / `study_section` | administering IC / review panel |
+| `n_projects` | funded R01 projects matching the concept |
+| `pct_of_matched` | share of matched projects |
+| `FY####` | funded-project count that fiscal year (trend) |
+
+`data/example_*_SYNTHETIC.csv` are illustrative schemas with made-up numbers.
+
+## Getting current data
+See [`data/SOURCES.md`](data/SOURCES.md). RCDC and success-rate tables are direct
+downloads from report.nih.gov; concept CSVs are generated by
+`scripts/pull_concept_landscape.py` (or the Colab notebook — supports keyword
+combinations with AND/OR/Boolean logic).
 
 ## Hosting on GitHub Pages
-Push this folder to a repo, enable Pages (Settings → Pages → deploy from
-branch, root). `index.html` is fully static, so it works as-is. The concept
-landscape uses pre-pulled CSVs (from the puller) because a static page cannot
-query the RePORTER API directly.
+`index.html` is fully static; enable Settings → Pages → deploy from branch
+(root). The Concept Landscape uses pre-pulled CSVs because a static page cannot
+query the RePORTER API live.
 
 ## Repository layout
 ```
-index.html                 the app (open this)
-scripts/
-  pull_concept_landscape.py generate the Concept Landscape CSVs from RePORTER
-  README.md
-data/
-  SOURCES.md                where to get the official data + formats
-  example_*_SYNTHETIC.csv    illustrative schemas (made-up numbers)
-LICENSE                     MIT
+index.html                    the app
+about.html                    user guide / help
+CITATION.cff                  citation metadata (GitHub "Cite this repository")
+scripts/pull_concept_landscape.py   generate Concept Landscape CSVs from RePORTER
+data/                         bundled real data + synthetic examples + SOURCES.md
+LICENSE                       MIT
 ```
 
 ## Caveats
-RCDC categories overlap and NIH does not budget by category. IC success rates
-are administrative and not topic-specific; study-section success rates are not
+RCDC categories overlap and NIH does not budget by category. IC success rates are
+administrative and not topic-specific; study-section success rates are not
 published anywhere. GrantScape is **descriptive** — a map to inform, not
-determine, submission strategy — and its own companion study found that
-converters tended to *continue* their research program rather than chase
-trends. **Not affiliated with or endorsed by NIH.** All data are U.S.
-government public-domain works.
+determine, submission strategy. **Not affiliated with or endorsed by NIH.** All
+data are U.S. government public-domain works.
+
+## Citing
+See `CITATION.cff` (a "Cite this repository" button appears on GitHub).
 
 ## License
 MIT — see [LICENSE](LICENSE).

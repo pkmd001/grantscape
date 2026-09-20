@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use GrantScape, please cite it as below."
+title: "GrantScape: an open tool for navigating the NIH funding landscape"
+abstract: >-
+  A self-contained, browser-based tool that integrates public NIH data
+  (RCDC categorical spending, Institute/Center success rates, and RePORTER
+  funded projects) to show what NIH funds, where funding is growing, and
+  which institutes and study sections fund a given research area.
+type: software
+authors:
+  - given-names: "[First]"
+    family-names: "[Last]"
+    affiliation: "[Institution]"
+version: "1.0.0"
+date-released: "2026-09-20"
+license: MIT
+url: "https://pkmd001.github.io/grantscape/"
+repository-code: "https://github.com/pkmd001/grantscape"
+keywords:
+  - NIH funding
+  - RCDC
+  - grant strategy
+  - surgeon-scientist
+  - research policy
+# doi: 10.5281/zenodo.XXXXXXX   # add after archiving a release on Zenodo

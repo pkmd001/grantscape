@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GrantScape — Help &amp; About</title>
+<style>
+  :root{--bg:#fff;--ink:#1a2230;--muted:#5b6577;--line:#e2e6ec;--band:#f6f8fb;--navy:#1f3864;--blue:#2e5496;
+    box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f141b;--ink:#e6eaf0;--muted:#9aa6b6;--line:#26303d;--band:#151c25;--navy:#9fc0ff;--blue:#7ea6e8;}}
+  *{box-sizing:inherit} body{margin:0;background:var(--bg);color:var(--ink);font:15.5px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:820px;margin:0 auto;padding:24px 20px 70px;}
+  h1{font-size:25px;color:var(--navy);margin:0 0 2px;} h2{font-size:18px;color:var(--blue);margin:26px 0 6px;}
+  .sub{color:var(--muted);font-size:13px;margin:0 0 6px;} a{color:var(--blue);}
+  .back{display:inline-block;margin:6px 0 14px;font-weight:600;}
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px;}
+  th,td{text-align:left;padding:6px 9px;border-bottom:1px solid var(--line);vertical-align:top;}
+  th{background:var(--navy);color:#fff;font-weight:600;}
+  tbody tr:nth-child(even){background:var(--band);}
+  code{background:var(--band);padding:1px 5px;border-radius:4px;font-size:13px;}
+  .callout{background:var(--band);border-left:3px solid var(--blue);padding:10px 14px;border-radius:0 8px 8px 0;margin:10px 0;font-size:14px;}
+  .foot{font-size:12px;color:var(--muted);margin-top:30px;border-top:1px solid var(--line);padding-top:12px;}
+  ul{padding-left:20px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>GrantScape — Help &amp; About</h1>
+  <p class="sub">The NIH funding landscape for grant strategy.</p>
+  <a class="back" href="index.html">&larr; Back to the app</a>
+
+  <p>GrantScape integrates three public NIH data sources into one browser tool so
+  investigators can see <b>what NIH funds</b>, <b>where funding is growing</b>, and
+  <b>which institutes and study sections fund a given research area</b>. Everything
+  runs locally in your browser; nothing is uploaded. On the hosted site, the three
+  tabs load real NIH data automatically when you open the page.</p>
+
+  <h2>Funding Map</h2>
+  <p>What NIH funds by research category (RCDC), and which areas are rising.</p>
+  <ul>
+    <li><b>From/To FY</b> — the fiscal-year window for growth. (FY2025 is an NIH estimate; end at FY2024 for full-actual figures.)</li>
+    <li><b>Momentum</b> — <i>Absolute $ growth</i> is a category's compound annual growth. <i>Relative to portfolio</i> subtracts the median category's growth, isolating fields rising faster than NIH overall (removing the macro-budget trend).</li>
+    <li><b>Min funding</b> — hides small-base categories whose percentages swing wildly on trivial dollar amounts (default &ge;$50M).</li>
+    <li>Search or click a category to see its funding trajectory.</li>
+  </ul>
+
+  <h2>Concept Landscape</h2>
+  <p>For a research concept, which institutes and study sections fund it.</p>
+  <ul>
+    <li>Choose a <b>bundled concept</b> (transplantation, regenerative medicine) or load your own CSVs.</li>
+    <li>Generate new concepts with <code>scripts/pull_concept_landscape.py</code> or the Colab notebook, which support keyword combinations (AND / OR / Boolean).</li>
+  </ul>
+  <div class="callout">RePORTER contains <b>funded projects only</b> (no application denominator), so this tab shows <b>where funded work lands</b>, not success rates.</div>
+
+  <h2>Institute Odds</h2>
+  <p>Success rate and funding by Institute/Center (NIH Data Book). Pick a fiscal year to see one row per IC, sorted by success rate. These are <b>new (Type 1) RPG</b> success rates; the primary column is investigator-initiated (untargeted). Rates are administrative and IC-level — not specific to your topic within an institute.</p>
+
+  <h2>Putting it together</h2>
+  <p>The three tabs answer a single strategic question: for my science, <i>which institutes and study sections fund it, is that area growing, and what are the odds there?</i> For example, transplantation research concentrates at NCI (lower current odds), whereas regenerative-medicine research concentrates at NIGMS (higher current odds) — so where a field is reviewed can matter as much as the science.</p>
+
+  <h2>Data sources &amp; limitations</h2>
+  <p>RCDC categorical spending and success rates: <a href="https://report.nih.gov" target="_blank" rel="noopener">report.nih.gov</a>; funded projects: NIH RePORTER. RCDC categories overlap and NIH does not budget by category; study-section success rates are not published anywhere. GrantScape is descriptive — a map to inform, not determine, submission strategy.</p>
+
+  <h2>Citing &amp; license</h2>
+  <p>See <code>CITATION.cff</code> in the repository (a &ldquo;Cite this repository&rdquo; button appears on GitHub). Code and bundled public-domain data are released under the MIT License.</p>
+
+  <p class="foot">Not affiliated with or endorsed by the National Institutes of Health. All data are U.S. government public-domain works.</p>
+  <a class="back" href="index.html">&larr; Back to the app</a>
+</div>
+</body>
+</html>
